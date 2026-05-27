@@ -125,19 +125,15 @@ img{display:block;}
 .badge.epic{background:rgba(168,85,247,.08);color:var(--epic);border-color:rgba(168,85,247,.22);}
 .badge.legendary{background:rgba(245,166,35,.07);color:var(--legendary);border-color:rgba(245,166,35,.22);}
 .badge.mythic{background:rgba(255,68,68,.07);color:var(--mythic);border-color:rgba(255,68,68,.22);}
-
 @keyframes rbw{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
 .badge.jackpot{background:linear-gradient(90deg,#ff0080,#ff8800,#ffe600,#00ff80,#00bfff,#8800ff,#ff0080);background-size:300%;animation:rbw 3s ease infinite;color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7);border:none;}
 .val.jackpot{background:linear-gradient(90deg,#ff6ec7,#ffb347,#ffe066,#b2ff66,#66eaff,#c084fc,#ff6ec7);background-size:300%;animation:rbw 3s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-
 @keyframes glx{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
 .badge.universal{background:linear-gradient(135deg,#1a0533,#3b0764,#6d28d9,#9333ea,#c084fc,#1a0533);background-size:300%;animation:glx 5s ease infinite;color:#f0abfc;text-shadow:0 0 12px rgba(192,132,252,.9);border-color:rgba(192,132,252,.45);}
 .val.universal{background:linear-gradient(90deg,#c084fc,#e879f9,#a855f7,#818cf8,#e879f9,#c084fc);background-size:300%;animation:glx 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 6px rgba(192,132,252,.45));}
-
 @keyframes hvn{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
 .badge.heavenly{background:linear-gradient(90deg,#ffffff,#ffffff,#fff9dc,#ffea70,#fff9dc,#ffffff,#ffffff);background-size:300%;animation:hvn 4s ease infinite;color:#ffffff;text-shadow:-1px -1px 0 #ffd700,1px -1px 0 #ffd700,-1px 1px 0 #ffd700,1px 1px 0 #ffd700,0 0 12px rgba(255,215,0,.9);border:1.5px solid #e6c200;font-weight:800;}
 .val.heavenly{background:linear-gradient(90deg,#ffffff,#ffffff,#fff9dc,#ffea70,#fffef8,#fff4a3,#ffffff);background-size:300%;animation:hvn 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(255,245,190,.5));}
-
 .val.common{color:var(--common);}
 .val.rare{color:var(--rare);}
 .val.epic{color:var(--epic);}
@@ -307,20 +303,17 @@ img{display:block;}
 
 /* ===========================
    ATTACKS PAGE
-   =========================== */
+=========================== */
 .atk-layout{display:grid;grid-template-columns:280px 1fr;gap:16px;align-items:start;}
 @media(max-width:800px){.atk-layout{grid-template-columns:1fr;}}
 
-/* Stand picker sidebar */
 .stand-picker{background:var(--surface);border:1px solid var(--b1);border-radius:var(--r-l);padding:16px;position:sticky;top:74px;}
 .stand-picker-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--tx4);font-family:var(--font-m);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--b0);}
-/* Section dividers in sidebar */
 .stand-section-label{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--tx4);font-family:var(--font-m);padding:10px 4px 5px;opacity:.6;}
 .stand-list{display:flex;flex-direction:column;gap:5px;}
 .stand-btn{display:flex;align-items:center;gap:10px;background:var(--s2);border:1px solid var(--b1);border-radius:10px;padding:10px 12px;cursor:pointer;transition:var(--tr);text-align:left;width:100%;}
 .stand-btn:hover{border-color:var(--b2);background:var(--s3);}
 .stand-btn.active{border-color:var(--acc,var(--blue));background:rgba(61,120,255,.05);}
-/* Stand image in sidebar (replaces emoji) */
 .stand-btn-img{width:38px;height:38px;border-radius:9px;background:var(--s3);overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
 .stand-btn-img img{width:100%;height:100%;object-fit:contain;padding:3px;transition:transform .25s;}
 .stand-btn:hover .stand-btn-img img{transform:scale(1.1);}
@@ -333,23 +326,13 @@ img{display:block;}
 .stand-btn--rare .stand-btn-name{color:var(--rare);}
 .stand-btn--common .stand-btn-name{color:var(--common);}
 .stand-btn--universal .stand-btn-name{color:var(--universal);}
-.stand-btn--heavenly .stand-btn-name{
-  background:linear-gradient(90deg,#fffbe0,#ffe066,#fff,#ffe066,#fffbe0);
-  background-size:300%;animation:hvn 4s ease infinite;
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.stand-btn--jackpot .stand-btn-name{
-  background:linear-gradient(90deg,#ff6ec7,#ffb347,#ffe066,#ff6ec7);
-  background-size:200%;animation:rbw 3s ease infinite;
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
+.stand-btn--heavenly .stand-btn-name{background:linear-gradient(90deg,#fffbe0,#ffe066,#fff,#ffe066,#fffbe0);background-size:300%;animation:hvn 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.stand-btn--jackpot .stand-btn-name{background:linear-gradient(90deg,#ff6ec7,#ffb347,#ffe066,#ff6ec7);background-size:200%;animation:rbw 3s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .stand-btn-origin{font-size:10px;color:var(--tx4);font-family:var(--font-m);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .stand-btn-badge{font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:999px;font-family:var(--font-m);border:1px solid;flex-shrink:0;}
 
-/* Guide content */
 .guide-content{display:none;animation:fadeUp .3s ease both;}
 .guide-content.active{display:block;}
-
 .guide-header-atk{padding:20px 24px 18px;background:var(--surface);border:1px solid var(--b1);border-radius:var(--r-l);margin-bottom:12px;display:flex;align-items:flex-start;gap:16px;}
 .guide-icon-img{width:64px;height:64px;border-radius:14px;background:var(--s2);overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
 .guide-icon-img img{width:100%;height:100%;object-fit:contain;padding:6px;}
@@ -366,11 +349,9 @@ img{display:block;}
 .gb-universal{background:linear-gradient(135deg,#1a0533,#6d28d9,#c084fc,#1a0533);background-size:300%;animation:glx2 5s ease infinite;color:#f0abfc;text-shadow:0 0 12px rgba(192,132,252,.9);border-color:rgba(192,132,252,.45);}
 .gb-jackpot{background:linear-gradient(90deg,#ff0080,#ff8800,#ffe600,#00bfff,#8800ff,#ff0080);background-size:300%;animation:rbw 3s ease infinite;color:#fff;text-shadow:0 0 8px rgba(0,0,0,.7);border:none;}
 
-/* Lore box */
 .lore-box{background:var(--s2);border:1px solid var(--b1);border-radius:10px;padding:13px 16px;margin-bottom:14px;font-size:12.5px;color:var(--tx2);line-height:1.8;border-left:3px solid var(--acc,var(--blue));}
 .lore-box strong{color:var(--tx);font-weight:700;}
 
-/* Ability section */
 .atk-section{background:var(--surface);border:1px solid var(--b1);border-radius:var(--r-l);overflow:hidden;margin-bottom:12px;}
 .atk-sec-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--tx4);font-family:var(--font-m);padding:14px 18px 12px;border-bottom:1px solid var(--b0);}
 .cmd-list{display:flex;flex-direction:column;gap:0;}
@@ -399,13 +380,16 @@ img{display:block;}
 .cmd-note b{color:var(--tx3);}
 
 /* Upgrade block */
-.upgrade-block{background:linear-gradient(135deg,rgba(204,102,255,.06),rgba(61,120,255,.04));border:1px solid rgba(204,102,255,.2);border-radius:var(--r-l);padding:16px 18px;margin-bottom:12px;}
-.upgrade-title{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-family:var(--font-m);color:var(--universal);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
-.upgrade-title::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--universal);box-shadow:0 0 10px var(--universal);}
+.upgrade-block{border-radius:var(--r-l);padding:16px 18px;margin-bottom:12px;}
+.upgrade-block.ub-mahoraga{background:linear-gradient(135deg,rgba(255,255,255,.03),rgba(0,0,0,.2));border:1px solid rgba(255,255,255,.12);}
+.upgrade-block.ub-lt{background:linear-gradient(135deg,rgba(204,102,255,.06),rgba(61,120,255,.04));border:1px solid rgba(204,102,255,.2);}
+.upgrade-title{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-family:var(--font-m);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.upgrade-title-img{width:28px;height:28px;border-radius:7px;object-fit:contain;background:var(--s2);padding:2px;flex-shrink:0;}
+.ub-mahoraga .upgrade-title{color:#e8e8e8;}
+.ub-lt .upgrade-title{color:var(--universal);}
+.ub-lt .upgrade-title::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--universal);box-shadow:0 0 10px var(--universal);}
 
-/* ===========================
-   TACTICAL SUMMARY (replaces hierarchy table)
-   =========================== */
+/* Tactical summary */
 .tactics-box{background:var(--surface);border:1px solid var(--b1);border-radius:var(--r-l);padding:20px 24px;margin-bottom:12px;}
 .tactics-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--tx4);font-family:var(--font-m);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--b0);display:flex;align-items:center;gap:8px;}
 .tactics-title::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--acc,var(--blue));box-shadow:0 0 10px var(--acc,var(--blue));flex-shrink:0;}
@@ -422,14 +406,12 @@ img{display:block;}
 .tac-col.strengths ul li::before{background:var(--up);}
 .tac-col.weaknesses ul li::before{background:var(--down);}
 .tac-col.combos ul li::before{background:var(--warn);}
-/* Counter badge row */
 .counters-row{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:14px;padding-top:14px;border-top:1px solid var(--b0);}
 .counters-label{font-size:10px;font-family:var(--font-m);font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--tx4);margin-right:3px;}
 .counter-tag{font-size:10.5px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid;font-family:var(--font-m);}
 .ct-breaks{color:var(--down);border-color:rgba(255,82,82,.3);background:rgba(255,82,82,.07);}
 .ct-broken-by{color:var(--warn);border-color:rgba(255,167,38,.3);background:rgba(255,167,38,.06);}
 
-/* Empty state */
 .atk-empty{text-align:center;padding:80px 20px;color:var(--tx3);}
 .atk-empty-icon{font-size:40px;margin-bottom:12px;opacity:.25;}
 .atk-empty-title{font-family:var(--font-h);font-size:18px;font-weight:700;margin-bottom:6px;}
@@ -445,7 +427,6 @@ footer a{color:var(--tx3);transition:color .15s;}
 footer a:hover{color:var(--tx);}
 .footer-brand{font-family:var(--font-h);font-weight:800;font-size:15px;color:var(--tx);margin-bottom:3px;}
 
-/* EMPTY */
 .empty{text-align:center;padding:64px 20px;color:var(--tx3);font-size:14px;grid-column:1/-1;}
 .empty-icon{font-size:32px;margin-bottom:10px;opacity:.3;display:block;}
 
@@ -459,7 +440,6 @@ footer a:hover{color:var(--tx);}
 .fam-card:nth-child(4){animation-delay:.08s}.fam-card:nth-child(5){animation-delay:.10s}.fam-card:nth-child(6){animation-delay:.12s}
 .fam-card:nth-child(n+7){animation-delay:.14s}
 
-/* RESPONSIVE */
 @media(max-width:700px){
   .shell{padding:0 14px 100px;}
   .nav{height:52px;}
@@ -543,7 +523,6 @@ footer a:hover{color:var(--tx);}
       <h1 class="hero-title">La référence<br><em>Des valeures du</em> <span class="serif">Casino</span></h1>
       <p class="hero-sub">Value list complète, calculateur de trades équitables et familles pour le Casino CubiGame. Rejoins le Discord pour être notifié des mises à jour de valeurs.</p>
     </div>
-
     <div class="disc-banner">
       <div class="disc-svg">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="#7289da"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
@@ -562,9 +541,7 @@ footer a:hover{color:var(--tx);}
         Rejoindre
       </a>
     </div>
-
     <div class="stats-row" id="statsRow"></div>
-
     <div style="font-family:var(--font-h);font-weight:800;font-size:16px;margin-bottom:12px;color:var(--tx2);letter-spacing:-.3px;">Fonctionnalités</div>
     <div class="feat-grid">
       <div class="feat-card" style="--fglow:rgba(41,184,232,.05)" onclick="switchPage('items')">
@@ -583,7 +560,7 @@ footer a:hover{color:var(--tx);}
         <div class="feat-cta">Voir les familles →</div>
       </div>
       <div class="feat-card" style="--fglow:rgba(255,82,82,.05)" onclick="switchPage('attacks')">
-        <div class="feat-icon">⚔️</div><div class="feat-title">Attaques JJK & JoJo</div>
+        <div class="feat-icon">⚔️</div><div class="feat-title">Attaques JJK &amp; JoJo</div>
         <div class="feat-desc">Consulte toutes les capacités des pouvoirs JJK et JoJo — commandes, cooldowns, mécaniques détaillées.</div>
         <div class="feat-cta">Voir les attaques →</div>
       </div>
@@ -594,7 +571,6 @@ footer a:hover{color:var(--tx);}
         <div class="feat-cta" style="color:var(--tx3)">Prochainement…</div>
       </div>
     </div>
-
     <div style="margin-top:40px;font-family:var(--font-h);font-weight:800;font-size:16px;margin-bottom:14px;color:var(--tx2);letter-spacing:-.3px;">Questions fréquentes</div>
     <div class="faq-list" id="faqList"></div>
   </div>
@@ -650,17 +626,11 @@ footer a:hover{color:var(--tx);}
     </div>
     <div class="calc-grid">
       <div class="calc-side you">
-        <div class="calc-head">
-          <span class="calc-label"><span class="calc-dot you"></span>Toi</span>
-          <span class="calc-total" id="youTotal">0</span>
-        </div>
+        <div class="calc-head"><span class="calc-label"><span class="calc-dot you"></span>Toi</span><span class="calc-total" id="youTotal">0</span></div>
         <div class="slots" id="youSlots"></div>
       </div>
       <div class="calc-side them">
-        <div class="calc-head">
-          <span class="calc-label"><span class="calc-dot them"></span>Eux</span>
-          <span class="calc-total" id="themTotal">0</span>
-        </div>
+        <div class="calc-head"><span class="calc-label"><span class="calc-dot them"></span>Eux</span><span class="calc-total" id="themTotal">0</span></div>
         <div class="slots" id="themSlots"></div>
       </div>
     </div>
@@ -674,20 +644,12 @@ footer a:hover{color:var(--tx);}
         <div class="vs-sep">VS</div>
         <div class="vs-side"><div class="vs-lbl">Eux</div><div class="vs-num them" id="vsThem">0</div></div>
       </div>
-      <div class="bar-track">
-        <div class="bar-you" id="barYou" style="width:50%"></div>
-        <div class="bar-them" id="barThem" style="width:50%"></div>
-      </div>
+      <div class="bar-track"><div class="bar-you" id="barYou" style="width:50%"></div><div class="bar-them" id="barThem" style="width:50%"></div></div>
       <div class="bar-lbls"><span id="bpYou">50%</span><span id="bpThem">50%</span></div>
-      <div class="diff-row">
-        <span class="diff-lbl">Différence de valeur</span>
-        <span class="diff-val" id="diffVal">—</span>
-      </div>
+      <div class="diff-row"><span class="diff-lbl">Différence de valeur</span><span class="diff-val" id="diffVal">—</span></div>
     </div>
     <div style="font-size:12px;color:var(--tx4);display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-      <span>💡 Clique sur un slot vide pour ajouter un objet</span>
-      <span style="opacity:.4">·</span>
-      <span>Survole un objet pour le supprimer</span>
+      <span>💡 Clique sur un slot vide pour ajouter un objet</span><span style="opacity:.4">·</span><span>Survole un objet pour le supprimer</span>
     </div>
   </div>
 
@@ -721,9 +683,6 @@ footer a:hover{color:var(--tx);}
 </div>
 
 <script>
-/* ===========================
-   DATA
-=========================== */
 const ITEMS=[
   {name:"Satoru Box",value:70000,rarity:"common",img:"images/SatoruBox.webp",desc:"Petite boîte ayant des chances de décupler sa valeur.",demand:2,trend:"up"},
   {name:"Reset Cooldown",value:25000,rarity:"common",img:"images/reset.webp",desc:"Permet de retirer le cooldown d'une attaque non ultime.",demand:2,trend:"flat"},
@@ -758,18 +717,11 @@ const ITEMS=[
 ];
 
 const FAMILIES=[
-  {name:"Momo",rarity:"common",glow:"rgba(122,154,184,.04)"},
-  {name:"Miwa",rarity:"common",glow:"rgba(122,154,184,.04)"},
-  {name:"Inumaki",rarity:"rare",glow:"rgba(41,184,232,.05)"},
-  {name:"Kugisaki",rarity:"rare",glow:"rgba(41,184,232,.05)"},
-  {name:"Kamo",rarity:"epic",glow:"rgba(168,85,247,.05)"},
-  {name:"Itadori",rarity:"epic",glow:"rgba(168,85,247,.05)"},
-  {name:"Hakari",rarity:"legendary",glow:"rgba(245,166,35,.05)"},
-  {name:"Tsukumo",rarity:"legendary",glow:"rgba(245,166,35,.05)"},
-  {name:"Zenin",rarity:"legendary",glow:"rgba(245,166,35,.05)"},
-  {name:"Sukuna",rarity:"mythic",glow:"rgba(255,68,68,.05)"},
-  {name:"Gojo",rarity:"mythic",glow:"rgba(255,68,68,.05)"},
-  {name:"Okkotsu",rarity:"mythic",glow:"rgba(255,68,68,.05)"},
+  {name:"Momo",rarity:"common",glow:"rgba(122,154,184,.04)"},{name:"Miwa",rarity:"common",glow:"rgba(122,154,184,.04)"},
+  {name:"Inumaki",rarity:"rare",glow:"rgba(41,184,232,.05)"},{name:"Kugisaki",rarity:"rare",glow:"rgba(41,184,232,.05)"},
+  {name:"Kamo",rarity:"epic",glow:"rgba(168,85,247,.05)"},{name:"Itadori",rarity:"epic",glow:"rgba(168,85,247,.05)"},
+  {name:"Hakari",rarity:"legendary",glow:"rgba(245,166,35,.05)"},{name:"Tsukumo",rarity:"legendary",glow:"rgba(245,166,35,.05)"},{name:"Zenin",rarity:"legendary",glow:"rgba(245,166,35,.05)"},
+  {name:"Sukuna",rarity:"mythic",glow:"rgba(255,68,68,.05)"},{name:"Gojo",rarity:"mythic",glow:"rgba(255,68,68,.05)"},{name:"Okkotsu",rarity:"mythic",glow:"rgba(255,68,68,.05)"},
 ];
 
 const FAQ=[
@@ -781,32 +733,50 @@ const FAQ=[
   {q:"Les valeurs changent-elles ?",a:"Oui, les valeurs sont mises à jour régulièrement selon l'offre et la demande. Les flèches de tendance (↑ ↓ →) indiquent l'évolution récente."},
 ];
 
-/* ===========================
+/* =====================================================================
    STANDS DATA
-=========================== */
+   Colors:
+   - Gojo        : sky blue     #56c2ff / #29b8e8
+   - Megumi      : near black   #1a1a2e / #888 (dark)
+   - Yuki        : violet       #9b59ff / #b07fff
+   - Yuta        : pale pink    #ffb0c8 / #ff8faa
+   - Kashimo     : lightning    #ffe033 / #ffd700
+   - Choso       : blood red    #b22222 / #cc3333
+   - Sukuna      : bright red   #ff2222 / #ff4444 (same as mythic but brighter)
+   - The World   : light yellow #f0e060 / #ffe066
+   - C Moon      : green        #2ecc71 / #27ae60
+   - Wonder of U : dark red     #8b0000 / #a00000
+   - D4C base    : cyan blue    #29b8e8 (same as before)
+   - D4C LT up   : yellow       #e6c200 / #ffe033
+   - Made in Hv  : heavenly     animated white/gold (use CSS var)
+   - TWOH        : heavenly     animated white/gold
+   Mahoraga upgrade in Megumi: white/silver theme
+===================================================================== */
+
+/* Heavenly color as a JS string for acc/cc */
+const HEAVENLY_ACC = "linear-gradient(90deg,#fffbe0,#ffe066,#fff9dc)";
+/* We can't use gradient as border color, so use the gold */
+const HEAVENLY_COLOR = "#e6d55a";
+
 const STANDS = [
-  /* ——— JJK ——— */
+  /* ——— JJK · sorted by rarity: legendary → mythic → jackpot → heavenly ——— */
   {
-    id:"gojo",
-    name:"Satoru Gojo",
-    img:"images/SatoruGojo.webp",
-    origin:"Six Yeux · L'Infini · Maître du Jujutsu",
-    rarity:"legendary",
-    badgeClass:"gb-legendary",
-    acc:"var(--legendary)",cc:"var(--legendary)",
-    headerBg:"linear-gradient(135deg,#0a0800,#0c1520)",
-    lore:"<strong>Concept :</strong> Gojo maîtrise l'Infini — une barrière invisible qui ralentit tout ce qui l'approche à l'infini. En mode Éveil, ses techniques sont dopées : Blue aspire jusqu'à 100k, BlueMax dure 1 min, RedMax casse le Cache Heian. L'Infini est <strong>la défense la plus solide du jeu</strong> — seul le World Cutting Slash ou Jacob Leader peut la briser.",
+    id:"gojo", name:"Satoru Gojo", img:"images/SatoruGojo.webp",
+    origin:"Six Yeux · L'Infini · Maître du Jujutsu", rarity:"legendary", badgeClass:"gb-legendary",
+    acc:"#29b8e8", cc:"#56c2ff",
+    headerBg:"linear-gradient(135deg,#00090f,#0c1520)",
+    lore:"<strong>Concept :</strong> Gojo maîtrise l'Infini — une barrière invisible qui ralentit tout ce qui l'approche à l'infini. En mode Éveil, ses techniques sont dopées. L'Infini est <strong>la défense la plus solide du jeu</strong> — seul le World Cutting Slash ou Jacob Leader peut la briser.",
     abilities:[
-      {cmd:"+blue @user",tags:['<span class="atk-tag t-rob">Aspiration</span>'],cd:"8h",desc:"Aspire <b>10k–30k</b> de la bank de la cible. La cible a <b>8 secondes</b> pour se défendre avec Red, RedMax ou Infini.",note:"<b>Éveil :</b> Aspire jusqu'à 100k."},
+      {cmd:"+blue @user",tags:['<span class="atk-tag t-rob">Aspiration</span>'],cd:"8h",desc:"Aspire <b>10k–30k</b> de la bank de la cible. La cible a <b>8 secondes</b> pour se défendre.",note:"<b>Éveil :</b> Aspire jusqu'à 100k."},
       {cmd:"+bluemax",tags:['<span class="atk-tag t-freeze">Interception</span>'],cd:"1 jour",desc:"Intercepte <b>toutes les mises éco du salon pendant 30 secondes</b>.",note:"<b>Éveil :</b> Dure 1 minute."},
-      {cmd:"+red @user",tags:['<span class="atk-tag t-break">Casse défenses</span>','<span class="atk-tag t-def">Counter-rob</span>'],cd:"3h",desc:"Casse les protections basiques de la cible (Lapin, Cerf, Cache Normal) + active un <b>counter-rob sur toi pendant 10 min</b> (le voleur perd 10%).",note:""},
-      {cmd:"+redmax @user",tags:['<span class="atk-tag t-break">Casse tout</span>','<span class="atk-tag t-def">Counter absolu</span>'],cd:"8h",desc:"Casse toutes les protections de la cible + active un <b>counter-tout sur toi pendant 10 min</b> (l'attaquant perd 20%, toi +30%).",note:"<b>Éveil :</b> Casse aussi le Cache Heian."},
+      {cmd:"+red @user",tags:['<span class="atk-tag t-break">Casse défenses</span>','<span class="atk-tag t-def">Counter-rob</span>'],cd:"3h",desc:"Casse les protections basiques de la cible + active un <b>counter-rob 10 min</b> (le voleur perd 10%).",note:""},
+      {cmd:"+redmax @user",tags:['<span class="atk-tag t-break">Casse tout</span>','<span class="atk-tag t-def">Counter absolu</span>'],cd:"8h",desc:"Casse toutes les protections + <b>counter-tout 10 min</b> (attaquant perd 20%, toi +30%).",note:"<b>Éveil :</b> Casse aussi le Cache Heian."},
       {cmd:"+violet @user",tags:['<span class="atk-tag t-freeze">Ban casino</span>'],cd:"3 jours",desc:"Ban la cible du casino pour <b>1h / 2h / 4h (aléatoire)</b>.",note:""},
-      {cmd:"+territoire",tags:['<span class="atk-tag t-special">Zone privée</span>'],cd:"9 jours",desc:"Bloque le salon pour toi seul pendant <b>5 minutes</b> — personne d'autre ne peut agir.",note:""},
-      {cmd:"+infini",tags:['<span class="atk-tag t-def">Bouclier absolu</span>'],cd:"1 jour depuis activation",desc:"<b>Protection absolue pendant 12 heures.</b> Aucune attaque ne peut te toucher.",note:"<b>Seul le World Cutting Slash ou Jacob Leader peut briser l'Infini.</b>"},
-      {cmd:"=awak",tags:['<span class="atk-tag t-ult">Éveil 24h</span>'],cd:"12 jours",desc:"Active l'Éveil pendant <b>24 heures</b> — toutes tes techniques sont boostées.<br>• Infini automatique • Blue jusqu'à 100k • BlueMax 1 min<br>• RedMax casse Cache Heian • Débloque =lastblue, =lastred, =purple",note:""},
-      {cmd:"=lastblue",tags:['<span class="atk-tag t-ult">Absorption Max</span>'],cd:"4 jours",desc:"Absorbe <b>toutes les attaques offensives + tous les familiers pendant 15 min</b>. Les ultimes et techniques défensives ne sont pas absorbables.",note:"<b>Prérequis :</b> Nécessite l'Éveil actif."},
-      {cmd:"=lastred",tags:['<span class="atk-tag t-ult">Répulsion Totale</span>'],cd:"4 jours",desc:"Repousse toutes les attaques + <b>KO 1 min toute personne parlant pendant 6 min</b>. Si la cible a Agito ou Rika → son familier est KO à la place.<br><b>Combo :</b> Active =lastblue simultanément → commande secrète après 3 min.",note:"<b>Prérequis :</b> Nécessite l'Éveil actif."},
+      {cmd:"+territoire",tags:['<span class="atk-tag t-special">Zone privée</span>'],cd:"9 jours",desc:"Bloque le salon pour toi seul pendant <b>5 minutes</b>.",note:""},
+      {cmd:"+infini",tags:['<span class="atk-tag t-def">Bouclier absolu 12h</span>'],cd:"1 jour depuis activation",desc:"<b>Protection absolue pendant 12 heures.</b> Aucune attaque ne peut te toucher.",note:"<b>Seul le World Cutting Slash ou Jacob Leader peut briser l'Infini.</b>"},
+      {cmd:"=awak",tags:['<span class="atk-tag t-ult">Éveil 24h</span>'],cd:"12 jours",desc:"Active l'Éveil pendant <b>24 heures</b> — toutes tes techniques sont boostées. Débloque =lastblue, =lastred, =purple.",note:""},
+      {cmd:"=lastblue",tags:['<span class="atk-tag t-ult">Absorption Max</span>'],cd:"4 jours",desc:"Absorbe <b>toutes les attaques offensives + tous les familiers pendant 15 min</b>.",note:"<b>Prérequis :</b> Éveil actif."},
+      {cmd:"=lastred",tags:['<span class="atk-tag t-ult">Répulsion Totale</span>'],cd:"4 jours",desc:"Repousse toutes les attaques + <b>KO 1 min toute personne parlant pendant 6 min</b>.",note:"<b>Prérequis :</b> Éveil actif."},
     ],
     tips:{
       strengths:["Infini = défense absolue incassable (sauf World Slash & Jacob)","Éveil booste toutes les techniques simultanément","RedMax contre-attaque ET casse les protections"],
@@ -817,24 +787,101 @@ const STANDS = [
     }
   },
   {
-    id:"megumi",
-    name:"Ten Shadow",
-    img:"images/Megumi.webp",
-    origin:"Megumi Fushiguro · Dix Ombres · Invocateur de Shikigami",
-    rarity:"jackpot",
-    badgeClass:"gb-jackpot",
-    acc:"var(--jackpot-c)",cc:"var(--jackpot-c)",
-    headerBg:"linear-gradient(135deg,#0a0015,#0c1520)",
-    lore:"<strong>Concept :</strong> Megumi invoque des shikigami aux effets variés — offensifs, défensifs, passifs. Agito est son pouvoir signature qui lui donne un shikigami aléatoire parmi 6. <strong>Mahoraga est l'ultime absolu</strong> : s'il survive à 3 hits normaux, il devient immunisé. L'Épée de l'Exorcisme détruit absolument tout (défenses, domaines, techniques actives).",
+    id:"sukuna", name:"Roi des Fléaux", img:"images/SukunaFinger.webp",
+    origin:"Ryomen Sukuna · 20 Doigts · Heian Form", rarity:"mythic", badgeClass:"gb-mythic",
+    acc:"#ff2020", cc:"#ff4040",
+    headerBg:"linear-gradient(135deg,#100000,#0c1520)",
+    lore:"<strong>Concept :</strong> Sukuna débloque ses techniques au fur et à mesure qu'il mange des doigts (1M pièce dans le shop). À <b>20 doigts</b>, la Heian Form (12h) booste tout. <strong>World Cutting Slash est la seule attaque à casser ABSOLUMENT TOUT</strong> — y compris l'Infini.",
+    abilities:[
+      {cmd:"=cleave @user",tags:['<span class="atk-tag t-break">Casse défenses</span>'],cd:"—",desc:"(1 doigt) Casse les boucliers de base. En <b>Heian Form</b> : casse les anti-robs améliorés.",note:"<b>Cooldown selon les doigts possédés.</b>"},
+      {cmd:"=cache",tags:['<span class="atk-tag t-def">Anti-rob amélioré</span>'],cd:"—",desc:"(2 doigts) Anti-rob amélioré <b>3 heures</b>. En <b>Heian Form</b> : dure <b>9 heures</b>.",note:""},
+      {cmd:"=spiderweb",tags:['<span class="atk-tag t-freeze">Stun 5min</span>'],cd:"—",desc:"(3 doigts) Stun 5min la prochaine personne qui parle. En <b>Heian Form</b> : stun les <b>5 prochaines personnes</b>.",note:""},
+      {cmd:"=dismantle @user",tags:['<span class="atk-tag t-break">Effets aléatoires</span>'],cd:"—",desc:"(5 doigts) Effets aléatoires. En <b>Heian Form</b> : break amélioré + 2 malus + –20% bank (max 200k).",note:""},
+      {cmd:"=transfo",tags:['<span class="atk-tag t-boost">Rôle Réceptacle</span>'],cd:"—",desc:"(6 doigts) Rôle Réceptacle (collect 12k/1j6h). En <b>Heian Form</b> : Rôle Heian Form (collect 24k/1j).",note:""},
+      {cmd:"=fuga @user",tags:['<span class="atk-tag t-rob">Attaque bank progressive</span>'],cd:"—",desc:"(8–10 doigts) 8=10%/100k max · 9=15%/150k max · 10=20%/200k max",note:""},
+      {cmd:"=extension @user",tags:['<span class="atk-tag t-rob">Dismantle + Cleave</span>'],cd:"3 jours",desc:"(12 doigts) Dismantle + Cleave combinés sur 1 personne.",note:""},
+      {cmd:"=extension-all",tags:['<span class="atk-tag t-ult">Zone totale</span>'],cd:"12 jours",desc:"(15 doigts) Extension sur <b>tout le salon</b>.",note:"<b>Domain Simple protège</b> (sauf en Heian Form)."},
+      {cmd:"=fugamax @user",tags:['<span class="atk-tag t-ult">Attaque entreprise</span>'],cd:"—",desc:"(17 doigts) Attaque l'entreprise de la cible.",note:""},
+      {cmd:"=worldslash @user",tags:['<span class="atk-tag t-broken">Casse ABSOLUMENT TOUT</span>','<span class="atk-tag t-ult">Ultimate</span>'],cd:"—",desc:"(19 doigts) <b>Casse TOUT sans exception</b> — protections, buffs, Infini de Gojo, domaines actifs.",note:"<b>Technique la plus puissante du jeu.</b>"},
+      {cmd:"=heian",tags:['<span class="atk-tag t-ult">Mode Heian 12h</span>'],cd:"—",desc:"(20 doigts) Forme Heian <b>12 heures</b> — toutes les techniques boostées.",note:""},
+      {cmd:"=domain",tags:['<span class="atk-tag t-def">Domaine Simple 1h</span>'],cd:"1 jour",desc:"Protection 1h contre les Extension 15 et l'Infinite Void de Gojo.",note:"<b>Doit être activé AVANT le déploiement du territoire ennemi.</b>"},
+    ],
+    tips:{
+      strengths:["World Cutting Slash brise TOUT sans exception (incluant l'Infini)","Heian Form booste toutes les techniques simultanément pendant 12h","Cache Heian = anti-rob amélioré qui dure 9h (meilleur du jeu)"],
+      weaknesses:["Chaque doigt coûte 1M — l'investissement est très élevé","Domain Simple doit être activé AVANT le territoire ennemi","Extension-All n'affecte pas les joueurs avec Domain Simple actif"],
+      combos:["Heian Form → Cache (9h) + Cleave amélioré + Fuga boosté = mode total","World Cutting Slash → Dismantle Heian (–20% bank) = double frappe","Extension-All (zone) après avoir vérifié qu'aucun Domain Simple n'est actif"],
+      breaksWhat:["Tous les anti-robs (World Slash)","Infini de Gojo (World Slash)","Anti-robs améliorés (Cleave Heian)","Domaines actifs (World Slash)"],
+      brokenBy:["Rien (World Slash est absolu)"]
+    }
+  },
+  {
+    id:"kashimo", name:"Hajime Kashimo", img:"images/Kashimo.webp",
+    origin:"Dieu de la Foudre · Beast Mode · Techniques électriques", rarity:"mythic", badgeClass:"gb-mythic",
+    acc:"#ffe033", cc:"#ffd700",
+    headerBg:"linear-gradient(135deg,#00060f,#0c1520)",
+    lore:"<strong>Concept :</strong> Kashimo est le maître de la foudre — ses techniques paralysent, volent et dévastent. En <b>Beast Mode</b> (1h, CD 5 jours), <b>toutes ses techniques sont améliorées</b>. <strong>Éclair Mur est un anti-rob amélioré</strong> au même niveau que le Cache Sukuna.",
+    abilities:[
+      {cmd:"=foudre @user",tags:['<span class="atk-tag t-freeze">Blocage dépôt</span>'],cd:"8h",desc:"Bloque le dépôt de la cible pendant <b>5 minutes</b>.",note:"<b>Beast Mode :</b> stun 15 minutes."},
+      {cmd:"=tonnerre @user",tags:['<span class="atk-tag t-rob">Vol cash</span>'],cd:"8h",desc:"Vole <b>15% du cash</b> de la cible.",note:"<b>Beast Mode :</b> vole 12% de la banque (max 400 000)."},
+      {cmd:"=eclairzone",tags:['<span class="atk-tag t-rob">Zone 2 cibles</span>'],cd:"12h",desc:"Frappe <b>2 cibles aléatoires</b> (5% cash + stun dépôt 3min).",note:"<b>Beast Mode :</b> 3 cibles touchées."},
+      {cmd:"=koji @user",tags:['<span class="atk-tag t-freeze">Stun entreprise</span>'],cd:"16h",desc:"Bloque la production de l'entreprise de la cible pendant <b>1 cycle</b>.",note:"<b>Beast Mode :</b> 2 cycles bloqués."},
+      {cmd:"=eclairmur",tags:['<span class="atk-tag t-def">Anti-rob amélioré 4h</span>'],cd:"1 jour",desc:"Anti-rob amélioré pendant <b>4 heures</b>.",note:"<b>Cassable uniquement par :</b> Cleave Heian, Épée (Mahoraga), Masse 3+ stacks, World Cutting Slash."},
+      {cmd:"=beastmode",tags:['<span class="atk-tag t-ult">Mode Bête 1h</span>'],cd:"5 jours",desc:"Active le Beast Mode pendant <b>1 heure</b> — toutes les techniques boostées.",note:""},
+    ],
+    tips:{
+      strengths:["Beast Mode booste les 4 techniques simultanément","Éclair Zone frappe 2-3 cibles aléatoires en un coup","Koji bloque l'entreprise ennemie = perte de revenus passifs"],
+      weaknesses:["Beast Mode a un CD de 5 jours — à utiliser au bon moment","Tonnerre vole uniquement le cash (pas la banque) sans Beast Mode","Foudre (sans Beast Mode) ne dure que 5 minutes"],
+      combos:["Beast Mode → Tonnerre (banque) → Foudre (stun 15min) → Koji (2 cycles) = combo total","Éclair Zone + Koji = pression sur 2-3 joueurs en même temps","Éclair Mur (anti-rob amélioré) + Beast Mode offensif = défense + attaque"],
+      breaksWhat:["Rien (offensif pur)"],
+      brokenBy:["Cleave Heian (brise Éclair Mur)","Masse 3+ stacks (brise Éclair Mur)","Épée de Mahoraga"]
+    }
+  },
+  {
+    id:"choso", name:"Choso", img:"images/Choso.webp",
+    origin:"Sorcier du Sang · Ressource sang · Techniques de sang maudit", rarity:"mythic", badgeClass:"gb-mythic",
+    acc:"#b22222", cc:"#cc3333",
+    headerBg:"linear-gradient(135deg,#0d0000,#0c1520)",
+    lore:"<strong>Concept :</strong> Choso gère un réservoir de sang (0–100). L'état sanguin affecte ses dégâts : Faible (0–30) = ×0.75, Stable (30–70) = ×1.00, <b>Critique (70–100) = ×1.25</b>. La cible <b>Saignante</b> après Piercing Blood amplifie Supernova de +40%.",
+    abilities:[
+      {cmd:"=sang",tags:['<span class="atk-tag t-passive">Statut</span>'],cd:"—",desc:"Affiche ton niveau de sang, ton buff actif et ton Blood Armor.",note:""},
+      {cmd:"=flowingredscale",tags:['<span class="atk-tag t-boost">+30 sang + buff 45min</span>'],cd:"3h",desc:"Gagne <b>+30 sang</b> + buff 45 min (attaques renforcées).",note:""},
+      {cmd:"=piercingblood @user",tags:['<span class="atk-tag t-rob">–8% bank</span>','<span class="atk-tag t-poison">Saignant 15min</span>'],cd:"4h",desc:"Coût : 20 sang — attaque la banque (<b>8%</b>) + applique <b>Saignant</b> 15 min.",note:"<b>Buff actif :</b> +30% de dégâts."},
+      {cmd:"=supernova @user",tags:['<span class="atk-tag t-rob">Burst 15%</span>'],cd:"1 jour",desc:"Coût : 45 sang — burst sanguin (<b>15%</b>). Cible saignante → +40%. Buff actif → +20%.",note:"<b>Combo parfait :</b> Flowing Red Scale → Piercing Blood → Supernova = +65% total."},
+      {cmd:"=siphon @user",tags:['<span class="atk-tag t-rob">Vol cash</span>','<span class="atk-tag t-boost">+15 sang</span>'],cd:"6h",desc:"Vole <b>12% du cash</b> + récupère <b>+15 sang</b>.",note:""},
+      {cmd:"=bloodarmor",tags:['<span class="atk-tag t-def">Anti-rob basique 2h30</span>'],cd:"1 jour",desc:"Anti-rob de base pendant <b>2h30</b>.",note:"<b>Cassable par :</b> Masse (1 stack), Cleave normal, Épée, World Cutting Slash."},
+    ],
+    tips:{
+      strengths:["Supernova + saignant + buff = burst de +65% sur la banque","Siphon récupère du sang en attaquant — autonomie totale","État Critique (70-100 sang) booste automatiquement tous les dégâts de ×1.25"],
+      weaknesses:["Blood Armor = niveau basique seulement","Supernova coûte 45 sang — à ne pas gaspiller","Piercing Blood doit précéder Supernova pour maximiser"],
+      combos:["Flowing Red Scale → Piercing Blood (saignant) → Supernova (+65%) = burst maximal","Siphon → Siphon → Flowing = montée rapide vers état Critique","Siphon (recover sang) → maintenir l'état Critique en permanence"],
+      breaksWhat:["Rien (offensif pur)"],
+      brokenBy:["Masse 1 stack (brise Blood Armor)","Cleave normal","Épée de Mahoraga","World Cutting Slash"]
+    }
+  },
+  {
+    id:"megumi", name:"Ten Shadow", img:"images/Megumi.webp",
+    origin:"Megumi Fushiguro · Dix Ombres · Invocateur de Shikigami", rarity:"jackpot", badgeClass:"gb-jackpot",
+    acc:"#333344", cc:"#888899",
+    headerBg:"linear-gradient(135deg,#08080f,#0c1520)",
+    lore:"<strong>Concept :</strong> Megumi invoque des shikigami aux effets variés — offensifs, défensifs, passifs. Agito est son pouvoir signature qui lui donne un shikigami aléatoire parmi 6. <strong>Mahoraga est l'ultime absolu</strong> : s'il survive à 3 hits normaux, il devient immunisé. L'Épée de l'Exorcisme détruit absolument tout.",
     abilities:[
       {cmd:"=frog @user",tags:['<span class="atk-tag t-freeze">Blocage dépôt</span>'],cd:"2h",desc:"Bloque le dépôt de la cible pendant <b>5 minutes</b>.",note:""},
-      {cmd:"=chien",tags:['<span class="atk-tag t-boost">Boost rob</span>'],cd:"16h",desc:"Tes <b>2 prochains robs sont en ×2</b>.",note:""},
+      {cmd:"=chien",tags:['<span class="atk-tag t-boost">Boost rob ×2</span>'],cd:"16h",desc:"Tes <b>2 prochains robs sont en ×2</b>.",note:""},
       {cmd:"=lapin",tags:['<span class="atk-tag t-def">Anti-rob 2h</span>'],cd:"1 jour",desc:"Protection anti-rob pendant <b>2 heures</b>.",note:"<b>Cassable par :</b> Red/RedMax (Gojo), Masse, Cleave (Sukuna), Épée, World Slash."},
       {cmd:"=nue @user",tags:['<span class="atk-tag t-rob">–3% bank</span>'],cd:"20h",desc:"Inflige <b>–3% de la bank</b> de la cible.",note:""},
-      {cmd:"=agito",tags:['<span class="atk-tag t-shiki">Shikigami aléatoire</span>'],cd:"3 jours",desc:"Donne un shikigami aléatoire parmi :<br><b style='color:var(--tx2)'>Éléphant (24.9%)</b> — baisse précision des attaques et casino de la cible<br><b style='color:var(--tx2)'>Serpent (24.9%)</b> — poison sur la cible (bloque dépôt 15min + rôle poison)<br><b style='color:var(--tx2)'>Cerf (24.9%)</b> — passif : si tu te fais rob, tu récupères 50–100%<br><b style='color:var(--tx2)'>Tigre (24.9%)</b> — rôle collect de 3 000 pendant 2h<br><b style='color:var(--jackpot-c)'>Buffle (0.1%)</b> — 2 malus aléatoires sur la cible<br><b style='color:var(--jackpot-c)'>Max Nue (0.1%)</b> — –10% de la bank de la cible",note:"<b>Important :</b> Agito ne recharge pas tant que le pouvoir obtenu n'est pas utilisé !"},
-      {cmd:"=mahoraga",tags:['<span class="atk-tag t-ult">Ultime</span>','<span class="atk-tag t-passive">Adaptation passive</span>'],cd:"7 jours si mort",desc:"Invoque le Général Divin Mahoraga — actif indéfiniment sauf s'il meurt.<br><b>Attaques normales/max :</b> chaque hit = 1 rotation (3 = adapté/immunisé)<br><b>Attaques ultimes :</b> Mahoraga intercepte (20% de s'adapter, 80% meurt)<br><b>Si mort :</b> CD 7 jours + toutes adaptations perdues",note:"<b>Prérequis :</b> Nécessite le rôle Mahoraga."},
-      {cmd:"=epee @user",tags:['<span class="atk-tag t-break">Détruit TOUT</span>'],cd:"8 jours",desc:"L'Épée de l'Exorcisme — <b>détruit toutes les protections, techniques, shikigami et rika de la cible</b>. Casse aussi les domains actifs.",note:"<b>Ne casse PAS</b> les buffs (Heian mode, Chien…). Nécessite Mahoraga actif."},
+      {cmd:"=agito",tags:['<span class="atk-tag t-shiki">Shikigami aléatoire</span>'],cd:"3 jours",desc:"Donne un shikigami aléatoire parmi :<br><b style='color:var(--tx2)'>Éléphant (24.9%)</b> — baisse précision<br><b style='color:var(--tx2)'>Serpent (24.9%)</b> — poison (bloque dépôt 15min)<br><b style='color:var(--tx2)'>Cerf (24.9%)</b> — passif : récupère 50–100% si rob<br><b style='color:var(--tx2)'>Tigre (24.9%)</b> — collect de 3 000 pendant 2h<br><b style='color:var(--jackpot-c)'>Buffle (0.1%)</b> — 2 malus aléatoires<br><b style='color:var(--jackpot-c)'>Max Nue (0.1%)</b> — –10% de la bank",note:"<b>Important :</b> Agito ne recharge pas tant que le pouvoir obtenu n'est pas utilisé !"},
     ],
+    upgrade:{
+      blockClass:"ub-mahoraga",
+      title:"Upgrade — Mahoraga",
+      titleImg:"images/mahoraga.webp",
+      intro:"<b style='color:#e8e8e8'>Mahoraga est une upgrade de Ten Shadow.</b> Les techniques ci-dessous s'ajoutent à celles de Megumi. <b>Nécessite le rôle Mahoraga.</b>",
+      acc:"#d0d0d0", cc:"#ffffff",
+      abilities:[
+        {cmd:"=mahoraga",tags:['<span class="atk-tag t-ult">Ultime</span>','<span class="atk-tag t-passive">Adaptation passive</span>'],cd:"7 jours si mort",desc:"Invoque le Général Divin Mahoraga — actif indéfiniment sauf s'il meurt.<br><b>Attaques normales :</b> chaque hit = 1 rotation (3 = adapté/immunisé)<br><b>Attaques ultimes :</b> 20% de s'adapter, 80% meurt<br><b>Si mort :</b> CD 7 jours + toutes adaptations perdues",note:"<b>Prérequis :</b> Nécessite le rôle Mahoraga."},
+        {cmd:"=epee @user",tags:['<span class="atk-tag t-break">Détruit TOUT</span>'],cd:"8 jours",desc:"L'Épée de l'Exorcisme — <b>détruit toutes les protections, techniques, shikigami et rika de la cible</b>. Casse aussi les domains actifs.",note:"<b>Ne casse PAS</b> les buffs (Heian mode, Chien…). Nécessite Mahoraga actif."},
+      ]
+    },
     tips:{
       strengths:["Mahoraga devient immunisé après 3 hits normaux — presque indestructible","Épée = seule technique qui casse domaines ET shikigami ennemis","Cerf passif récupère 50-100% sur chaque rob subi"],
       weaknesses:["Mahoraga mort = CD 7 jours + reset des adaptations","Agito bloqué tant que le pouvoir n'est pas utilisé","Épée nécessite Mahoraga actif"],
@@ -844,50 +891,42 @@ const STANDS = [
     }
   },
   {
-    id:"yuki",
-    name:"Yuki Tsukumo",
-    img:"images/Yuki.webp",
-    origin:"Maîtresse de la Masse · Attraction Stellaire",
-    rarity:"jackpot",
-    badgeClass:"gb-jackpot",
-    acc:"var(--jackpot-c)",cc:"var(--jackpot-c)",
-    headerBg:"linear-gradient(135deg,#00050a,#0c1520)",
-    lore:"<strong>Concept :</strong> Yuki accumule de la <b>Masse</b> (max 5 stacks) et remplit sa <b>Réserve</b> (max 5 000 000) via ses techniques de setup, puis frappe au moment parfait. Plus elle a de stacks + Réserve, plus ses attaques sont dévastatrices. <strong>Le Trou Noir ignore TOUS les anti-robs, y compris l'Infini</strong> — unique dans le jeu.",
+    id:"yuki", name:"Yuki Tsukumo", img:"images/Yuki.webp",
+    origin:"Maîtresse de la Masse · Attraction Stellaire", rarity:"jackpot", badgeClass:"gb-jackpot",
+    acc:"#9b59ff", cc:"#b07fff",
+    headerBg:"linear-gradient(135deg,#06000f,#0c1520)",
+    lore:"<strong>Concept :</strong> Yuki accumule de la <b>Masse</b> (max 5 stacks) et remplit sa <b>Réserve</b> puis frappe au moment parfait. <strong>Le Trou Noir ignore TOUS les anti-robs, y compris l'Infini</strong> — unique dans le jeu.",
     abilities:[
       {cmd:"=garuda",tags:['<span class="atk-tag t-boost">Collect boosté</span>','<span class="atk-tag t-passive">+1 Masse</span>'],cd:"1 jour",desc:"Invoque Garuda 12h (collect boosté) + gagne <b>+1 Masse</b>.",note:""},
-      {cmd:"=masse @user",tags:['<span class="atk-tag t-break">Casse défenses</span>'],cd:"4h",desc:"Attaque selon tes stacks :<br>• 1–2 stacks → casse anti-robs basiques (Lapin, Blood Armor)<br>• 3–5 stacks → casse aussi les améliorés (Cache, Éclair Mur)",note:"<b>Ne casse jamais l'Infini.</b>"},
+      {cmd:"=masse @user",tags:['<span class="atk-tag t-break">Casse défenses</span>'],cd:"4h",desc:"1–2 stacks → casse anti-robs basiques. 3–5 stacks → casse aussi les améliorés (Cache, Éclair Mur).",note:"<b>Ne casse jamais l'Infini.</b>"},
       {cmd:"=gravite @user",tags:['<span class="atk-tag t-rob">Aspiration → Réserve</span>'],cd:"12h",desc:"Aspire <b>8% de la richesse → Réserve</b> (max 400 000 par usage).",note:""},
-      {cmd:"=ecrasement @user",tags:['<span class="atk-tag t-rob">Burst stacks</span>'],cd:"16h",desc:"Consume tous tes stacks → frappe la banque (max 2 500 000).<br>1→6% | 2→10% | 3→14% | 4→18% | 5→24% + bonus si Réserve pleine",note:""},
-      {cmd:"=garudarelease [@user]",tags:['<span class="atk-tag t-rob">Libère Réserve</span>'],cd:"12h",desc:"Sans cible → récupère ta Réserve en banque. Avec cible → libère la Réserve en dégâts (max 2 000 000).",note:""},
+      {cmd:"=ecrasement @user",tags:['<span class="atk-tag t-rob">Burst stacks</span>'],cd:"16h",desc:"Consume tous tes stacks → frappe la banque.<br>1→6% | 2→10% | 3→14% | 4→18% | 5→24% + bonus si Réserve pleine",note:""},
+      {cmd:"=garudarelease [@user]",tags:['<span class="atk-tag t-rob">Libère Réserve</span>'],cd:"12h",desc:"Sans cible → récupère ta Réserve en banque. Avec cible → libère en dégâts (max 2 000 000).",note:""},
       {cmd:"=compression",tags:['<span class="atk-tag t-def">Réduction dégâts</span>'],cd:"2 jours",desc:"Sacrifie 15% bank (max 600 000) → <b>protection 35% réduction pendant 3h</b>.",note:""},
       {cmd:"=domainyuki",tags:['<span class="atk-tag t-ult">Domain 1h</span>'],cd:"7 jours",desc:"Domain 1h : Garuda auto + +1 Masse + accès à =singularitybreak.",note:""},
-      {cmd:"=singularitybreak @user",tags:['<span class="atk-tag t-ult">Burst combiné</span>'],cd:"Domain seulement (1×)",desc:"Burst combiné Masse + Réserve → <b>dégâts massifs sur la banque</b>.",note:"<b>Prérequis :</b> Domain actif, utilisable 1 seule fois."},
-      {cmd:"=trounoir @user",tags:['<span class="atk-tag t-broken">Ignore TOUT</span>','<span class="atk-tag t-ult">Ultimate</span>'],cd:"10 jours",desc:"Vide toute ta banque → vole <b>35% de la bank de la cible (max 1 500 000)</b>. <b>Ignore TOUS les anti-robs, y compris l'Infini.</b>",note:"<b>Seul pouvoir du jeu à percer l'Infini de Gojo.</b>"},
+      {cmd:"=singularitybreak @user",tags:['<span class="atk-tag t-ult">Burst combiné</span>'],cd:"Domain seulement (1×)",desc:"Burst combiné Masse + Réserve → <b>dégâts massifs sur la banque</b>.",note:"<b>Prérequis :</b> Domain actif."},
+      {cmd:"=trounoir @user",tags:['<span class="atk-tag t-broken">Ignore TOUT</span>','<span class="atk-tag t-ult">Ultimate</span>'],cd:"10 jours",desc:"Vide toute ta banque → vole <b>35% de la bank (max 1 500 000)</b>. <b>Ignore TOUS les anti-robs, y compris l'Infini.</b>",note:"<b>Seul pouvoir du jeu à percer l'Infini de Gojo.</b>"},
     ],
     tips:{
       strengths:["Trou Noir = seule attaque qui perce l'Infini de Gojo","Masse 3+ stacks casse les améliorés (Cache, Éclair Mur)","Réserve peut stocker jusqu'à 5M pour un burst massif"],
-      weaknesses:["Nécessite du setup (accumuler Masse + remplir Réserve) avant d'attaquer","Trou Noir coûte toute ta propre banque","Compression coûte 15% bank pour activer"],
+      weaknesses:["Nécessite du setup (accumuler Masse + remplir Réserve)","Trou Noir coûte toute ta propre banque","Compression coûte 15% bank pour activer"],
       combos:["Garuda → Masse ×5 → Écrasement (24%) → Trou Noir = combo burst maximal","Gravité × plusieurs usages → Garudarelease sur cible = burst Réserve","Domain → Singularity Break = ultime absolu dans le domain"],
       breaksWhat:["Lapin / Blood Armor (Masse 1-2 stacks)","Cache / Éclair Mur (Masse 3-5 stacks)","Infini de Gojo (Trou Noir uniquement)"],
       brokenBy:["Épée de Mahoraga","RedMax (Gojo)","World Cutting Slash"]
     }
   },
   {
-    id:"yuta",
-    name:"Queen of Curses",
-    img:"images/Yuta.webp",
-    origin:"Yuta Okkotsu · Rika · Copie de techniques",
-    rarity:"jackpot",
-    badgeClass:"gb-jackpot",
-    acc:"var(--jackpot-c)",cc:"var(--jackpot-c)",
+    id:"yuta", name:"Queen of Curses", img:"images/Yuta.webp",
+    origin:"Yuta Okkotsu · Rika · Copie de techniques", rarity:"jackpot", badgeClass:"gb-jackpot",
+    acc:"#ff8faa", cc:"#ffb0c8",
     headerBg:"linear-gradient(135deg,#08001a,#0c1520)",
-    lore:"<strong>Concept :</strong> Yuta peut copier n'importe quelle technique du serveur. Avec <b>Rika</b> invoquée, ses copies sont boostées et son Domain s'active. Le <b>Copie Max</b> pendant le Domain permet de copier plusieurs pouvoirs différents en une seule session. <strong>Jacob Leader enlève TOUS les buffs et protections</strong> d'une cible, y compris l'Infini de Gojo.",
+    lore:"<strong>Concept :</strong> Yuta peut copier n'importe quelle technique du serveur. Avec <b>Rika</b> invoquée, ses copies sont boostées et son Domain s'active. <strong>Jacob Leader enlève TOUS les buffs et protections</strong> d'une cible, y compris l'Infini de Gojo.",
     abilities:[
       {cmd:"+copie @user",tags:['<span class="atk-tag t-special">Copie aléatoire</span>'],cd:"4h",desc:"Copie une <b>attaque aléatoire</b> de la cible (base uniquement).",note:"<b>Les ultimes ne sont jamais copiables.</b>"},
       {cmd:"+rika",tags:['<span class="atk-tag t-boost">Invoque Rika 24h</span>'],cd:"12h",desc:"Invoque Rika pendant <b>24 heures</b> — nécessaire pour Copie Améliorée et le Domain.",note:""},
       {cmd:"+copie-plus @user [attaque]",tags:['<span class="atk-tag t-special">Copie + puissance max</span>'],cd:"6h",desc:"Copie l'attaque choisie à <b>puissance maximale</b>.",note:"<b>Nécessite Rika.</b>"},
       {cmd:"=domain-yuta",tags:['<span class="atk-tag t-ult">Domain 1h</span>'],cd:"7 jours",desc:"Active le Domain de Yuta pendant <b>1 heure</b>. Débloque Copie Max et Jacob Leader.",note:"<b>Nécessite Rika.</b>"},
-      {cmd:"=copiemax @user",tags:['<span class="atk-tag t-special">Menu déroulant</span>'],cd:"5min (normal) / 10min (max)",desc:"Menu déroulant : <b>choisis une capacité de la cible et exécute-la</b>. Peut copier de plusieurs personnes différentes. Chaque pouvoir ne peut être copié qu'une seule fois.",note:"<b>Nécessite Domain actif.</b>"},
+      {cmd:"=copiemax @user",tags:['<span class="atk-tag t-special">Menu déroulant</span>'],cd:"5min (normal) / 10min (max)",desc:"Menu déroulant : <b>choisis une capacité de la cible et exécute-la</b>. Peut copier de plusieurs personnes différentes.",note:"<b>Nécessite Domain actif.</b>"},
       {cmd:"+purelove @user",tags:['<span class="atk-tag t-invert">Transfert debuffs</span>'],cd:"12h",desc:"Transfère <b>tes debuffs actifs</b> vers une autre personne.",note:""},
       {cmd:"+jacob @user",tags:['<span class="atk-tag t-break">Enlève TOUS les buffs</span>'],cd:"1× par Domain",desc:"Enlève <b>TOUS les buffs et protections</b> de la cible — y compris l'Infini de Gojo.",note:"<b>Nécessite Domain actif.</b> 1 seule utilisation par Domain."},
       {cmd:"+purelove-max @user",tags:['<span class="atk-tag t-ult">Ultime</span>','<span class="atk-tag t-rob">Casse bank 5min</span>'],cd:"3 jours",desc:"Casse la bank d'une personne (max <b>1.5M</b>) pendant <b>5 minutes</b>.",note:""},
@@ -895,110 +934,22 @@ const STANDS = [
     tips:{
       strengths:["Jacob Leader = seule technique (avec TWOH) à briser l'Infini de Gojo","Copie Max permet d'utiliser n'importe quelle technique du serveur","Pure Love transfère les debuffs sur l'adversaire"],
       weaknesses:["Copie Améliorée et Domain nécessitent Rika (CD 12h)","Jacob Leader : 1 seule fois par Domain","Les ultimes ennemis ne sont jamais copiables"],
-      combos:["Domain → Jacob (brise Infini) → Copie Max (utilise ses propres techniques) → Pure Love Max","Copie Max @X + @Y = combo multi-sources en un seul Domain","Rika → Copie Plus (puissance max) = copie boostée sans Domain"],
+      combos:["Domain → Jacob (brise Infini) → Copie Max → Pure Love Max","Copie Max @X + @Y = combo multi-sources en un seul Domain","Rika → Copie Plus (puissance max) = copie boostée sans Domain"],
       breaksWhat:["Infini de Gojo (Jacob Leader)","Tous buffs/protections (Jacob Leader)"],
       brokenBy:["Épée de Mahoraga (détruit Rika)","RedMax (Gojo)"]
     }
   },
+  /* ——— JoJo · sorted by rarity: legendary → mythic → heavenly ——— */
   {
-    id:"kashimo",
-    name:"Hajime Kashimo",
-    img:"images/Kashimo.webp",
-    origin:"Dieu de la Foudre · Beast Mode · Techniques électriques",
-    rarity:"mythic",
-    badgeClass:"gb-mythic",
-    acc:"var(--rare)",cc:"var(--rare)",
-    headerBg:"linear-gradient(135deg,#00060f,#0c1520)",
-    lore:"<strong>Concept :</strong> Kashimo est le maître de la foudre — ses techniques paralysent, volent et dévastent. En <b>Beast Mode</b> (1h, CD 5 jours), <b>toutes ses techniques sont améliorées</b> : Foudre stun 15min, Tonnerre frappe la banque, Éclair Zone touche 3 cibles, Koji bloque 2 cycles. <strong>Éclair Mur est un anti-rob amélioré</strong> au même niveau que le Cache Sukuna.",
-    abilities:[
-      {cmd:"=foudre @user",tags:['<span class="atk-tag t-freeze">Blocage dépôt</span>'],cd:"8h",desc:"Bloque le dépôt de la cible pendant <b>5 minutes</b>.",note:"<b>Beast Mode :</b> stun 15 minutes."},
-      {cmd:"=tonnerre @user",tags:['<span class="atk-tag t-rob">Vol cash</span>'],cd:"8h",desc:"Vole <b>15% du cash</b> de la cible.",note:"<b>Beast Mode :</b> vole 12% de la banque (max 400 000)."},
-      {cmd:"=eclairzone",tags:['<span class="atk-tag t-rob">Zone 2 cibles</span>'],cd:"12h",desc:"Frappe <b>2 cibles aléatoires</b> (5% cash + stun dépôt 3min).",note:"<b>Beast Mode :</b> 3 cibles touchées."},
-      {cmd:"=koji @user",tags:['<span class="atk-tag t-freeze">Stun entreprise</span>'],cd:"16h",desc:"Bloque la production de l'entreprise de la cible pendant <b>1 cycle</b>. Une entreprise stunée est protégée 12h contre un nouveau stun.",note:"<b>Beast Mode :</b> 2 cycles bloqués."},
-      {cmd:"=eclairmur",tags:['<span class="atk-tag t-def">Anti-rob amélioré 4h</span>'],cd:"1 jour",desc:"Anti-rob amélioré pendant <b>4 heures</b>.",note:"<b>Cassable uniquement par :</b> Cleave Heian (Sukuna), Épée (Mahoraga), Masse 3+ stacks (Yuki), World Cutting Slash (Sukuna)."},
-      {cmd:"=beastmode",tags:['<span class="atk-tag t-ult">Mode Bête 1h</span>'],cd:"5 jours",desc:"Active le Beast Mode pendant <b>1 heure</b> — toutes les techniques sont boostées :<br>• Foudre stun 15min • Tonnerre banque (400k max)<br>• Éclair Zone 3 cibles • Koji 2 cycles",note:""},
-    ],
-    tips:{
-      strengths:["Beast Mode booste les 4 techniques simultanément","Éclair Zone frappe 2-3 cibles aléatoires en un coup","Koji bloque l'entreprise ennemie = perte de revenus passifs"],
-      weaknesses:["Beast Mode a un CD de 5 jours — à utiliser au bon moment","Tonnerre vole uniquement le cash (pas la banque) sans Beast Mode","Foudre (sans Beast Mode) ne dure que 5 minutes"],
-      combos:["Beast Mode → Tonnerre (banque) → Foudre (stun 15min) → Koji (2 cycles) = combo total","Éclair Zone (zone) + Koji (entreprise) = pression sur 2-3 joueurs en même temps","Éclair Mur (anti-rob amélioré) + Beast Mode offensif = défense + attaque"],
-      breaksWhat:["Rien (offensif pur)"],
-      brokenBy:["Cleave Heian (brise Éclair Mur)","Masse 3+ stacks (brise Éclair Mur)","Épée de Mahoraga"]
-    }
-  },
-  {
-    id:"choso",
-    name:"Choso",
-    img:"images/Choso.webp",
-    origin:"Sorcier du Sang · Ressource sang · Techniques de sang maudit",
-    rarity:"mythic",
-    badgeClass:"gb-mythic",
-    acc:"var(--down)",cc:"#ff8888",
-    headerBg:"linear-gradient(135deg,#0d0000,#0c1520)",
-    lore:"<strong>Concept :</strong> Choso gère un réservoir de sang (0–100). L'état sanguin affecte ses dégâts : Faible (0–30) = ×0.75, Stable (30–70) = ×1.00, <b>Critique (70–100) = ×1.25</b>. La cible <b>Saignante</b> après Piercing Blood amplifie Supernova de +40%. Combine les buffs et la cible saignante pour un burst de +65% de dégâts.",
-    abilities:[
-      {cmd:"=sang",tags:['<span class="atk-tag t-passive">Statut</span>'],cd:"—",desc:"Affiche ton niveau de sang, ton buff actif et ton Blood Armor.",note:""},
-      {cmd:"=flowingredscale",tags:['<span class="atk-tag t-boost">+30 sang + buff 45min</span>'],cd:"3h",desc:"Gagne <b>+30 sang</b> + buff 45 min (attaques renforcées).",note:""},
-      {cmd:"=piercingblood @user",tags:['<span class="atk-tag t-rob">–8% bank</span>','<span class="atk-tag t-poison">Saignant 15min</span>'],cd:"4h",desc:"Coût : 20 sang — attaque la banque de la cible (<b>8%</b>) + applique <b>Saignant</b> pendant 15 min.",note:"<b>Buff actif :</b> +30% de dégâts supplémentaires."},
-      {cmd:"=supernova @user",tags:['<span class="atk-tag t-rob">Burst 15%</span>'],cd:"1 jour",desc:"Coût : 45 sang — burst sanguin (<b>15% de la banque</b>). Cible saignante → +40% de dégâts supplémentaires. Buff actif → +20% supplémentaires.",note:"<b>Combo parfait :</b> Flowing Red Scale (buff) → Piercing Blood (saignant) → Supernova = +65% total."},
-      {cmd:"=siphon @user",tags:['<span class="atk-tag t-rob">Vol cash</span>','<span class="atk-tag t-boost">+15 sang</span>'],cd:"6h",desc:"Vole <b>12% du cash</b> de la cible + récupère <b>+15 sang</b>.",note:""},
-      {cmd:"=bloodarmor",tags:['<span class="atk-tag t-def">Anti-rob basique 2h30</span>'],cd:"1 jour",desc:"Anti-rob de base pendant <b>2h30</b>.",note:"<b>Cassable par :</b> Masse (1 stack), Cleave normal (Sukuna), Épée (Mahoraga), World Cutting Slash."},
-    ],
-    tips:{
-      strengths:["Supernova + saignant + buff = burst de +65% sur la banque","Siphon récupère du sang en attaquant — autonomie totale","Etat Critique (70-100 sang) booste automatiquement tous les dégâts de ×1.25"],
-      weaknesses:["Blood Armor = niveau basique seulement (même que Lapin)","Supernova coûte 45 sang — à ne pas gaspiller","Piercing Blood doit précéder Supernova pour maximiser les dégâts"],
-      combos:["Flowing Red Scale → Piercing Blood (saignant) → Supernova (+65%) = burst maximal","Siphon → Siphon → Flowing = montée rapide vers état Critique","Siphon (recover sang) → maintenir l'état Critique en permanence"],
-      breaksWhat:["Rien (offensif pur)"],
-      brokenBy:["Masse 1 stack (brise Blood Armor)","Cleave normal (brise Blood Armor)","Épée de Mahoraga","World Cutting Slash"]
-    }
-  },
-  {
-    id:"sukuna",
-    name:"Roi des Fléaux",
-    img:"images/SukunaFinger.webp",
-    origin:"Ryomen Sukuna · 20 Doigts · Heian Form",
-    rarity:"mythic",
-    badgeClass:"gb-mythic",
-    acc:"var(--mythic)",cc:"var(--mythic)",
-    headerBg:"linear-gradient(135deg,#100000,#0c1520)",
-    lore:"<strong>Concept :</strong> Sukuna débloque ses techniques au fur et à mesure qu'il mange des doigts (1M pièce dans le shop). Ses pouvoirs s'améliorent avec le nombre de doigts. À <b>20 doigts</b>, la Heian Form (12h) booste toutes ses techniques : Cache dure 9h, Cleave brise les anti-robs améliorés, Fuga frappe plus fort. <strong>World Cutting Slash est la seule attaque du jeu à casser ABSOLUMENT TOUT</strong> — y compris l'Infini.",
-    abilities:[
-      {cmd:"=cleave @user",tags:['<span class="atk-tag t-break">Casse défenses</span>'],cd:"—",desc:"(1 doigt) Casse les boucliers de base. En <b>Heian Form</b> : casse les anti-robs améliorés.",note:"<b>Cooldown selon les doigts possédés.</b>"},
-      {cmd:"=cache",tags:['<span class="atk-tag t-def">Anti-rob amélioré</span>'],cd:"—",desc:"(2 doigts) Anti-rob amélioré <b>3 heures</b>. En <b>Heian Form</b> : dure <b>9 heures</b>.",note:""},
-      {cmd:"=spiderweb",tags:['<span class="atk-tag t-freeze">Stun 5min</span>'],cd:"—",desc:"(3 doigts) Stun 5min la prochaine personne qui parle. En <b>Heian Form</b> : stun les <b>5 prochaines personnes</b>.",note:""},
-      {cmd:"=dismantle @user",tags:['<span class="atk-tag t-break">Effets aléatoires</span>'],cd:"—",desc:"(5 doigts) Effets aléatoires (break, malus, –bank). En <b>Heian Form</b> : break amélioré + 2 malus + –20% bank (max 200k).",note:""},
-      {cmd:"=transfo",tags:['<span class="atk-tag t-boost">Rôle Réceptacle</span>'],cd:"—",desc:"(6 doigts) Rôle Réceptacle (collect 12k/1j6h). En <b>Heian Form</b> : Rôle Heian Form (collect 24k/1j).",note:""},
-      {cmd:"=fuga @user",tags:['<span class="atk-tag t-rob">Attaque bank progressive</span>'],cd:"—",desc:"(8–10 doigts) Attaque bank progressive :<br>• 8 doigts = 10% / 100k max<br>• 9 doigts = 15% / 150k max<br>• 10 doigts = 20% / 200k max",note:""},
-      {cmd:"=extension @user",tags:['<span class="atk-tag t-rob">Dismantle + Cleave</span>'],cd:"3 jours",desc:"(12 doigts) Dismantle + Cleave combinés sur 1 personne.",note:""},
-      {cmd:"=extension-all",tags:['<span class="atk-tag t-ult">Zone totale</span>'],cd:"12 jours",desc:"(15 doigts) Extension sur <b>tout le salon</b>.",note:"<b>Domain Simple protège</b> (sauf en Heian Form)."},
-      {cmd:"=fugamax @user",tags:['<span class="atk-tag t-ult">Attaque entreprise</span>'],cd:"—",desc:"(17 doigts) Attaque l'entreprise de la cible.",note:""},
-      {cmd:"=worldslash @user",tags:['<span class="atk-tag t-broken">Casse ABSOLUMENT TOUT</span>','<span class="atk-tag t-ult">Ultimate</span>'],cd:"—",desc:"(19 doigts) <b>Casse TOUT sans exception</b> — protections, buffs, Infini de Gojo, domaines actifs. Rien ne résiste.",note:"<b>Technique la plus puissante du jeu.</b>"},
-      {cmd:"=heian",tags:['<span class="atk-tag t-ult">Mode Heian 12h</span>'],cd:"—",desc:"(20 doigts) Forme Heian <b>12 heures</b> — toutes les techniques boostées.",note:""},
-      {cmd:"=domain",tags:['<span class="atk-tag t-def">Domaine Simple 1h</span>'],cd:"1 jour",desc:"Protection 1h contre les Extension 15 et l'Infinite Void de Gojo.",note:"<b>Doit être activé AVANT le déploiement du territoire ennemi.</b>"},
-    ],
-    tips:{
-      strengths:["World Cutting Slash brise TOUT sans exception (incluant l'Infini)","Heian Form booste toutes les techniques simultanément pendant 12h","Cache Heian = anti-rob amélioré qui dure 9h (meilleur du jeu)"],
-      weaknesses:["Chaque doigt coûte 1M — l'investissement est très élevé","Domain Simple doit être activé AVANT le territoire ennemi","Extension-All (15 doigts) n'affecte pas les joueurs avec Domain Simple actif"],
-      combos:["Heian Form → Cache (9h) + Cleave amélioré + Fuga boosté = mode offensif/défensif total","World Cutting Slash → Dismantle Heian (–20% bank) = double frappe dévastateur","Extension-All (zone) après avoir vérifié qu'aucun Domain Simple n'est actif"],
-      breaksWhat:["Tous les anti-robs (World Slash)","Infini de Gojo (World Slash)","Anti-robs améliorés (Cleave Heian)","Domaines actifs (World Slash)"],
-      brokenBy:["Rien (World Slash est absolu)"]
-    }
-  },
-  /* ——— JoJo ——— */
-  {
-    id:"tw",
-    name:"The World",
-    img:"images/The World.webp",
-    origin:"Stand de DIO Brando · Arrêt du temps",
-    rarity:"legendary",
-    badgeClass:"gb-legendary",
-    acc:"var(--legendary)",cc:"var(--legendary)",
+    id:"tw", name:"The World", img:"images/The World.webp",
+    origin:"Stand de DIO Brando · Arrêt du temps", rarity:"legendary", badgeClass:"gb-legendary",
+    acc:"#f0e060", cc:"#ffe066",
     headerBg:"linear-gradient(135deg,#0d0b00,#0c1520)",
-    lore:"<strong>Concept :</strong> The World arrête le temps. Dans l'anime, DIO freeze tout le monde et agit seul pendant que les autres sont paralysés. Ici, <strong>timestop = la cible ne peut plus rien faire au casino pendant X minutes.</strong> Le Muda Muda c'est un barrage incessant de coups — donc plusieurs robs consécutifs qui saturent les défenses.",
+    lore:"<strong>Concept :</strong> The World arrête le temps. Dans l'anime, DIO freeze tout le monde et agit seul pendant que les autres sont paralysés. Ici, <strong>timestop = la cible ne peut plus rien faire au casino pendant X minutes.</strong>",
     abilities:[
-      {cmd:"=knife @user",tags:['<span class="atk-tag t-rob">Rob</span>'],cd:"3h",desc:"Lance une volée de couteaux sur la cible — vole <b>8% (100k max)</b> de sa bank.",note:"<b>Note :</b> Bloqué normalement par les anti-robs."},
+      {cmd:"=knife @user",tags:['<span class="atk-tag t-rob">Rob</span>'],cd:"3h",desc:"Lance une volée de couteaux — vole <b>8% (100k max)</b> de sa bank.",note:"<b>Note :</b> Bloqué normalement par les anti-robs."},
       {cmd:"=timestop @user",tags:['<span class="atk-tag t-freeze">Freeze 8min</span>'],cd:"8h",desc:"Arrête le temps autour de la cible — <b>plus aucune commande casino pendant 8 minutes</b>.",note:"<b>Contre :</b> L'Infini de Gojo bloque le Timestop. Mahoraga adapté aussi."},
-      {cmd:"=mudamuda @user",tags:['<span class="atk-tag t-rob">Rob ×4</span>','<span class="atk-tag t-break">Casse défense</span>'],cd:"1 jour",desc:"4 robs de 5% en rafale. Chaque coup a <b>60% de chance de briser</b> l'anti-rob actif avant le coup suivant.",note:"<b>L'Infini absorbe les 4 coups sans fléchir.</b>"},
+      {cmd:"=mudamuda @user",tags:['<span class="atk-tag t-rob">Rob ×4</span>','<span class="atk-tag t-break">Casse défense</span>'],cd:"1 jour",desc:"4 robs de 5% en rafale. Chaque coup a <b>60% de chance de briser</b> l'anti-rob actif.",note:"<b>L'Infini absorbe les 4 coups sans fléchir.</b>"},
       {cmd:"=roadroller @user",tags:['<span class="atk-tag t-break">Détruit protections</span>','<span class="atk-tag t-freeze">Stun 5min</span>'],cd:"2 jours",desc:"Détruit TOUTES les protections actives (même cache amélioré) + stun <b>5 minutes</b>.",note:"<b>Setup :</b> Enchaîne avec =mudamuda ou =timestop. Ne casse pas l'Infini."},
       {cmd:"=zawarudo",tags:['<span class="atk-tag t-def">Anti-rob 10h</span>','<span class="atk-tag t-freeze">Counter-freeze</span>'],cd:"1 jour depuis activation",desc:"Anti-rob 10h. Tout robeur est <b>freezé 3 minutes</b> et son rob échoue.",note:"<b>Cassable par :</b> Redmax, Épée de Mahoraga, Trou Noir de Yuki."},
       {cmd:"=checkmate @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"9 jours",desc:"Timestop le salon entier <b>10 minutes</b> + rob automatique de <b>15%</b>.",note:"<b>L'Infini bloque les robs mais pas le freeze.</b>"},
@@ -1012,24 +963,20 @@ const STANDS = [
     }
   },
   {
-    id:"cmoon",
-    name:"C Moon",
-    img:"images/C moon.webp",
-    origin:"Enrico Pucci · Gravité inversée · Évolution de Whitesnake",
-    rarity:"mythic",
-    badgeClass:"gb-mythic",
-    acc:"var(--mythic)",cc:"var(--mythic)",
-    headerBg:"linear-gradient(135deg,#0d0005,#0c1520)",
+    id:"cmoon", name:"C Moon", img:"images/C moon.webp",
+    origin:"Enrico Pucci · Gravité inversée · Évolution de Whitesnake", rarity:"mythic", badgeClass:"gb-mythic",
+    acc:"#2ecc71", cc:"#27ae60",
+    headerBg:"linear-gradient(135deg,#001a08,#0c1520)",
     lore:"<strong>Concept :</strong> C Moon inverse la gravité et la réalité des surfaces. Ici, <strong>C Moon retourne les effets</strong> : un anti-rob devient une vulnérabilité, les gains deviennent des pertes.",
     abilities:[
-      {cmd:"=gravityshift @user",tags:['<span class="atk-tag t-invert">Inversion</span>'],cd:"5h",desc:"Inverse la protection de la cible — pendant <b>20 minutes</b>, chaque rob sur elle est doublé. Son anti-rob se retourne contre elle.",note:"<b>Sans protection :</b> inflige directement 6% de sa bank."},
+      {cmd:"=gravityshift @user",tags:['<span class="atk-tag t-invert">Inversion</span>'],cd:"5h",desc:"Inverse la protection de la cible — pendant <b>20 minutes</b>, chaque rob sur elle est doublé.",note:"<b>Sans protection :</b> inflige directement 6% de sa bank."},
       {cmd:"=inversion @user",tags:['<span class="atk-tag t-invert">Inversion gains</span>'],cd:"16h",desc:"Pendant <b>30 minutes</b>, chaque collect/gain de la cible → elle <b>perd la moitié du montant</b>.",note:"<b>Brutal contre les farmeurs actifs.</b>"},
       {cmd:"=compress @user",tags:['<span class="atk-tag t-rob">Réduction bank 2h</span>'],cd:"20h",desc:"Réduit la bank de la cible de <b>15% pendant 2 heures</b> (puis revient).",note:""},
       {cmd:"=softlight",tags:['<span class="atk-tag t-def">Anti-rob 3h</span>','<span class="atk-tag t-invert">Counter inversé</span>'],cd:"2 jours depuis activation",desc:"Anti-rob 3h. Le robeur <b>perd 15% de sa propre bank</b>.",note:"<b>Cassable par :</b> Redmax, Masse 3+, Épée de Mahoraga."},
-      {cmd:"=gravityfinal @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"9 jours",desc:"Inversion totale <b>1 heure</b> — tout ce que la cible tente se retourne contre elle. Chaque commande lui coûte <b>3% de sa bank</b>.",note:"<b>Seul contre :</b> L'Infini neutralise l'inversion."},
+      {cmd:"=gravityfinal @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"9 jours",desc:"Inversion totale <b>1 heure</b> — chaque commande de la cible lui coûte <b>3% de sa bank</b>.",note:"<b>Seul contre :</b> L'Infini neutralise l'inversion."},
     ],
     tips:{
-      strengths:["Gravity Shift retourne les défenses ennemies contre elles","Inversion détruit les farmeurs actifs passif pendant 30min","Softlight = counter qui ruine l'attaquant (–15% bank)"],
+      strengths:["Gravity Shift retourne les défenses ennemies contre elles","Inversion détruit les farmeurs actifs pendant 30min","Softlight = counter qui ruine l'attaquant (–15% bank)"],
       weaknesses:["Aucun rob direct massif","L'Infini immunise contre l'inversion","Inversion inefficace si la cible reste inactive"],
       combos:["Gravity Shift → envoyer un allié rob = cible prend le double","Inversion → cibler le farmeur le plus actif du serveur","Softlight + Compress = pression économique constante"],
       breaksWhat:["Rien directement"],
@@ -1037,38 +984,30 @@ const STANDS = [
     }
   },
   {
-    id:"wou",
-    name:"Wonder of U",
-    img:"images/Wonder Of U.webp",
-    origin:"Tooru · Calamité automatique · Stand dissimulé",
-    rarity:"epic",
-    badgeClass:"gb-epic",
-    acc:"var(--epic)",cc:"var(--epic)",
-    headerBg:"linear-gradient(135deg,#08001a,#0c1520)",
-    lore:"<strong>Concept :</strong> Wonder of U génère des <strong>calamités automatiques</strong> sur quiconque tente de s'approcher de son porteur. Dans l'anime, plus tu cherches à nuire à Tooru, plus tu te blesses toi-même. Ici, <strong>attaquer Wonder of U, c'est se blesser soi-même.</strong>",
+    id:"wou", name:"Wonder of U", img:"images/Wonder Of U.webp",
+    origin:"Tooru · Calamité automatique · Stand dissimulé", rarity:"epic", badgeClass:"gb-epic",
+    acc:"#8b0000", cc:"#a00000",
+    headerBg:"linear-gradient(135deg,#0a0000,#0c1520)",
+    lore:"<strong>Concept :</strong> Wonder of U génère des <strong>calamités automatiques</strong> sur quiconque tente de s'approcher de son porteur. Dans l'anime, plus tu cherches à nuire à Tooru, plus tu te blesses toi-même.",
     abilities:[
       {cmd:"=calamite",tags:['<span class="atk-tag t-passive">Passif 12h</span>','<span class="atk-tag t-def">Rétorsion auto</span>'],cd:"2 jours depuis activation",desc:"Champ de Calamité passif 12h — chaque attaque contre toi → l'attaquant <b>perd 10% de sa bank (50k max)</b>.",note:"<b>Seul l'Infini de Gojo sur l'attaquant bloque la calamité.</b>"},
       {cmd:"=flow @user",tags:['<span class="atk-tag t-freeze">Blocage 1 action</span>'],cd:"8h",desc:"La <b>prochaine commande</b> de la cible échoue et lui coûte <b>5% de sa bank (25k max)</b>.",note:"<b>Max 2h</b> ou jusqu'à la prochaine commande."},
       {cmd:"=pursuit @user",tags:['<span class="atk-tag t-passive">Malédiction 3h</span>'],cd:"1 jour",desc:"Pendant <b>3 heures</b>, chaque commande de la cible a <b>30% de chance d'échouer</b> et de lui coûter 4%.",note:"<b>Cumulable</b> avec =calamite actif."},
       {cmd:"=wonder",tags:['<span class="atk-tag t-def">Bouclier absolu 8h</span>','<span class="atk-tag t-passive">Rétorsion 20%</span>'],cd:"3 jours depuis activation",desc:"Anti-rob 8h + chaque attaque reçue → l'attaquant <b>perd 20% de sa bank (100k max)</b>.",note:"<b>Cassable par :</b> Trou Noir de Yuki, Épée de Mahoraga."},
-      {cmd:"=calamityfinal @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"10 jours",desc:"Les <b>5 prochaines commandes de la cible échouent</b> chacune et lui coûtent 5% de sa bank = 25% total max. Dure <b>6 heures</b>.",note:"<b>Seul contre :</b> Ne pas utiliser le casino pendant 6h."},
+      {cmd:"=calamityfinal @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"10 jours",desc:"Les <b>5 prochaines commandes de la cible échouent</b> chacune et lui coûtent 5% = 25% total max. Dure <b>6 heures</b>.",note:"<b>Seul contre :</b> Ne pas utiliser le casino pendant 6h."},
     ],
     tips:{
       strengths:["Calamite + Pursuit = rétorsion auto + 30% d'échec sur chaque commande","Wonder = meilleure rétorsion offensive du jeu (–20% bank à l'attaquant)","Calamity Final force la cible à ne pas jouer pendant 6h"],
       weaknesses:["Aucune attaque directe proactive","Trou Noir et Épée ignorent la calamité","Inactif si la cible ne joue pas au casino"],
-      combos:["Calamite (rétorsion auto) + Pursuit (30% fail) = pression maximale","Wonder + laisser l'ennemi attack = il perd 20% bank instantanément","Flow → empêcher un dépôt/protection imminente de la cible"],
+      combos:["Calamite (rétorsion auto) + Pursuit (30% fail) = pression maximale","Wonder + laisser l'ennemi attaquer = il perd 20% bank instantanément","Flow → empêcher un dépôt/protection imminente de la cible"],
       breaksWhat:["Rien directement"],
       brokenBy:["Trou Noir de Yuki","Épée de Mahoraga"]
     }
   },
   {
-    id:"d4c",
-    name:"D4C",
-    img:"images/D4C.webp",
-    origin:"Dirty Deeds Done Dirt Cheap · Funny Valentine",
-    rarity:"mythic",
-    badgeClass:"gb-mythic",
-    acc:"#29b8e8",cc:"#29b8e8",
+    id:"d4c", name:"D4C", img:"images/D4C.webp",
+    origin:"Dirty Deeds Done Dirt Cheap · Funny Valentine", rarity:"mythic", badgeClass:"gb-mythic",
+    acc:"#29b8e8", cc:"#29b8e8",
     headerBg:"linear-gradient(135deg,#001020,#0c1520)",
     lore:"<strong>Concept :</strong> D4C permet de voyager entre les dimensions parallèles et d'invoquer des doubles de soi-même. Ici, <strong>D4C = esquiver, attaquer depuis la sécurité, et coincer les autres.</strong>",
     abilities:[
@@ -1079,8 +1018,11 @@ const STANDS = [
       {cmd:"=d4cfinal @user",tags:['<span class="atk-tag t-ult">Ultimate</span>'],cd:"10 jours",desc:"<b>6 doubles robs de 3% chacun (18% total)</b> depuis des dimensions différentes — counter-rob immunisé.",note:"<b>Anti-robs basiques bloquent chaque coup. L'Infini absorbe tout.</b>"},
     ],
     upgrade:{
-      title:"🚂 Upgrade — D4C : Love Train",
+      blockClass:"ub-lt",
+      title:"Upgrade — D4C : Love Train",
+      titleImg:"images/D4C Love Train.webp",
       intro:"Déblocage de D4C : Love Train ajoute les deux techniques suivantes. <b style=\"color:var(--universal);\">Toutes les techniques D4C de base restent disponibles.</b>",
+      acc:"#e6c200", cc:"#ffe033",
       abilities:[
         {cmd:"=lovetrain",tags:['<span class="atk-tag t-broken">Broken — Déflexion absolue 24h</span>'],cd:"3 jours depuis activation",desc:"Dévie automatiquement <b>TOUT ce qui te vise vers un joueur aléatoire</b> pendant 24 heures.",note:"<b>Seul contre :</b> The Tusk Act 4 et The World Over Heaven."},
         {cmd:"=traincrash @user",tags:['<span class="atk-tag t-broken">Broken — Malheur accumulé</span>','<span class="atk-tag t-ult">Ultimate LT</span>'],cd:"14 jours",desc:"Tout le malheur accumulé pendant le Love Train est renvoyé sur la cible en une frappe. Sans accumulation min. 3 robs : <b>–20% bank</b>.",note:"<b>Ignore tous les anti-robs. Ne perce pas l'Infini de Gojo.</b>"},
@@ -1095,20 +1037,16 @@ const STANDS = [
     }
   },
   {
-    id:"mih",
-    name:"Made In Heaven",
-    img:"images/Made In Heaven.webp",
-    origin:"Enrico Pucci · Accélération universelle · Évolution finale",
-    rarity:"heavenly",
-    badgeClass:"gb-heavenly",
-    acc:"#e6c200",cc:"#fff9dc",
+    id:"mih", name:"Made In Heaven", img:"images/Made In Heaven.webp",
+    origin:"Enrico Pucci · Accélération universelle · Évolution finale", rarity:"heavenly", badgeClass:"gb-heavenly",
+    acc:"#e6c200", cc:"#fff4a0",
     headerBg:"linear-gradient(135deg,#0d0d00,#0c1520,#0d0d00)",
-    lore:"<strong>Concept :</strong> Made In Heaven accélère le temps de l'univers entier, de plus en plus vite jusqu'au reset universel. <strong>Il manipule le temps de tout le monde.</strong> Ses cooldowns se réduisent automatiquement. Et quand le temps atteint son maximum… l'univers repart de zéro.",
+    lore:"<strong>Concept :</strong> Made In Heaven accélère le temps de l'univers entier. <strong>Il manipule le temps de tout le monde.</strong> Ses cooldowns se réduisent automatiquement. Et quand le temps atteint son maximum… l'univers repart de zéro.",
     abilities:[
-      {cmd:"=accelerate",tags:['<span class="atk-tag t-special">–1h tous les CDs du salon</span>'],cd:"5h",desc:"Réduit les cooldowns de <b>TOUS les joueurs de 1 heure</b>. Chaque usage augmente le niveau d'Accélération (+1). À 5 niveaux, Universal Reset devient utilisable.",note:"<b>Dangereux</b> si des ennemis ont des ultimes presque prêts."},
+      {cmd:"=accelerate",tags:['<span class="atk-tag t-special">–1h tous les CDs du salon</span>'],cd:"5h",desc:"Réduit les cooldowns de <b>TOUS les joueurs de 1 heure</b>. À 5 niveaux d'Accélération, Universal Reset devient utilisable.",note:"<b>Dangereux</b> si des ennemis ont des ultimes presque prêts."},
       {cmd:"=speedup @user",tags:['<span class="atk-tag t-freeze">Surchauffe</span>'],cd:"10h",desc:"Les 3 prochains cooldowns de la cible sont <b>divisés par 2</b>. Si elle n'agit pas en 5min → ses CDs sont <b>doublés</b>.",note:""},
       {cmd:"=timeflow",tags:['<span class="atk-tag t-def">Anti-rob 6h</span>','<span class="atk-tag t-boost">–30min par attaque reçue</span>'],cd:"2 jours depuis activation",desc:"Anti-rob 6h + chaque attaque reçue <b>réduit ton prochain CD de 30 minutes</b>.",note:"<b>Cassable par :</b> Trou Noir, Épée de Mahoraga."},
-      {cmd:"=universalreset",tags:['<span class="atk-tag t-ult">Ultimate A — Zone</span>'],cd:"14 jours",desc:"Tous les cooldowns actifs du salon tombent à <b>zéro</b>. Tout le monde peut rejouer instantanément.",note:"<b>Prérequis :</b> Niveau d'Accélération ≥ 5."},
+      {cmd:"=universalreset",tags:['<span class="atk-tag t-ult">Ultimate A — Zone</span>'],cd:"14 jours",desc:"Tous les cooldowns actifs du salon tombent à <b>zéro</b>.",note:"<b>Prérequis :</b> Niveau d'Accélération ≥ 5."},
       {cmd:"=newuniverse",tags:['<span class="atk-tag t-ult">Ultimate B</span>','<span class="atk-tag t-broken">Ignore l\'Infini</span>'],cd:"21 jours",desc:"Les banks des <b>5 derniers joueurs ayant parlé</b> sont divisées par 1.2. Toi → <b>+30% bank (max 250k)</b>.",note:"<b>L'Infini ne bloque pas cet effet</b> — seul Made In Heaven a cette propriété."},
     ],
     tips:{
@@ -1120,26 +1058,22 @@ const STANDS = [
     }
   },
   {
-    id:"twoh",
-    name:"The World Over Heaven",
-    img:"images/The World Over Heaven.webp",
-    origin:"DIO Brando · Réécriture de la réalité",
-    rarity:"heavenly",
-    badgeClass:"gb-heavenly",
-    acc:"#ff6ecb",cc:"#ff6ecb",
+    id:"twoh", name:"The World Over Heaven", img:"images/The World Over Heaven.webp",
+    origin:"DIO Brando · Réécriture de la réalité", rarity:"heavenly", badgeClass:"gb-heavenly",
+    acc:"#e6c200", cc:"#fff4a0",
     headerBg:"linear-gradient(135deg,#150008,#0c1520,#00080f)",
-    lore:"<strong>Concept :</strong> TWOH permet de <strong>réécrire la réalité avec une plume divine</strong>. C'est le Stand le plus broken qui existe. <strong>TWOH est le seul Stand (avec Jacob Leader de Yuta) capable de briser l'Infini de Gojo</strong> — parce que même l'Infini fait partie de la réalité qu'il peut réécrire.",
+    lore:"<strong>Concept :</strong> TWOH permet de <strong>réécrire la réalité avec une plume divine</strong>. C'est le Stand le plus broken qui existe. <strong>TWOH est le seul Stand (avec Jacob Leader de Yuta) capable de briser l'Infini de Gojo</strong>.",
     abilities:[
       {cmd:"=overrideprotect @user",tags:['<span class="atk-tag t-break">Annule toute protection</span>'],cd:"8h",desc:"Réécrit la protection de la cible — <b>annule TOUTE protection active</b>, y compris l'Infini de Gojo.",note:"<b>N'inflige pas de dégâts.</b> Setup pour un allié."},
-      {cmd:"=rewritegains @user",tags:['<span class="atk-tag t-invert">Réécriture des gains</span>'],cd:"16h",desc:"Les <b>3 prochains collects</b> de la cible sont réécrits en pertes — elle perd autant qu'elle aurait gagné.",note:"<b>Max 6h</b> ou 3 collects."},
-      {cmd:"=godhand @user",tags:['<span class="atk-tag t-rob">–15% bank</span>','<span class="atk-tag t-break">Annule prochaine protection</span>'],cd:"1 jour",desc:"Vole <b>15% de la bank</b> + réécrit le futur : la <b>prochaine activation de protection n'a aucun effet</b>.",note:"<b>Combo :</b> Godhand puis laisser activer son anti-rob → anti-rob inefficace → allié rob librement."},
-      {cmd:"=rewritereality",tags:['<span class="atk-tag t-def">Réécriture défensive 8h</span>'],cd:"3 jours depuis activation",desc:"Le prochain rob reçu te <b>rapporte de l'argent</b> au lieu d'en perdre — le voleur perd ce qu'il voulait voler.",note:"<b>Seul un autre TWOH peut réécrire par-dessus.</b>"},
-      {cmd:"=heavenwrite",tags:['<span class="atk-tag t-special">Réécriture des règles 2h</span>'],cd:"5 jours",desc:"Réécrit une règle du salon aléatoirement parmi :<br>① Tous les robs –50% | ② Tous les robs ×2 | ③ Anti-robs –50% durée<br>④ Ultimes désactivés pour tous | ⑤ CDs –2h pour tous",note:"<b>L'effet tiré est annoncé dans le salon.</b>"},
+      {cmd:"=rewritegains @user",tags:['<span class="atk-tag t-invert">Réécriture des gains</span>'],cd:"16h",desc:"Les <b>3 prochains collects</b> de la cible sont réécrits en pertes.",note:"<b>Max 6h</b> ou 3 collects."},
+      {cmd:"=godhand @user",tags:['<span class="atk-tag t-rob">–15% bank</span>','<span class="atk-tag t-break">Annule prochaine protection</span>'],cd:"1 jour",desc:"Vole <b>15% de la bank</b> + réécrit le futur : la <b>prochaine activation de protection n'a aucun effet</b>.",note:"<b>Combo :</b> Godhand → laisser activer l'anti-rob ennemi → anti-rob inefficace → allié rob librement."},
+      {cmd:"=rewritereality",tags:['<span class="atk-tag t-def">Réécriture défensive 8h</span>'],cd:"3 jours depuis activation",desc:"Le prochain rob reçu te <b>rapporte de l'argent</b> au lieu d'en perdre.",note:"<b>Seul un autre TWOH peut réécrire par-dessus.</b>"},
+      {cmd:"=heavenwrite",tags:['<span class="atk-tag t-special">Réécriture des règles 2h</span>'],cd:"5 jours",desc:"Réécrit une règle du salon aléatoirement :<br>① Tous les robs –50% | ② Tous les robs ×2 | ③ Anti-robs –50% durée<br>④ Ultimes désactivés pour tous | ⑤ CDs –2h pour tous",note:"<b>L'effet tiré est annoncé dans le salon.</b>"},
       {cmd:"=overheaven @user",tags:['<span class="atk-tag t-ult">Ultimate</span>','<span class="atk-tag t-broken">Broken — Réécriture absolue</span>'],cd:"12 jours",desc:"–30% bank (500k max) + <b>tous buffs/protections effacés (y compris l'Infini)</b> + ses 3 prochaines attaques échouent.",note:"<b>Seul contre :</b> Un autre TWOH peut réécrire par-dessus avant l'effet."},
     ],
     tips:{
       strengths:["Override Protect brise l'Infini de Gojo — setup pour toute l'équipe","Over Heaven = réécriture totale + efface TOUS les buffs en un coup","Rewrite Reality = counter qui rapporte de l'argent au lieu d'en perdre"],
-      weaknesses:["Seul un autre TWOH peut vraiment contrer TWOH","Override Protect n'inflige pas de dégâts — nécessite un allié pour en profiter","Heaven Write est aléatoire — peut avantager les ennemis"],
+      weaknesses:["Seul un autre TWOH peut vraiment contrer TWOH","Override Protect n'inflige pas de dégâts — nécessite un allié","Heaven Write est aléatoire — peut avantager les ennemis"],
       combos:["Override Protect (brise Infini) → allié utilise World Slash ou technique forte","God Hand + attendre l'activation de l'anti-rob ennemi → son anti-rob est inefficace","Rewrite Reality → attendre le premier rob → l'argent revient dans ta bank"],
       breaksWhat:["Infini de Gojo (Override Protect + Over Heaven)","Tous buffs et protections (Over Heaven)"],
       brokenBy:["Uniquement un autre TWOH"]
@@ -1147,11 +1081,10 @@ const STANDS = [
   }
 ];
 
-const STAND_BADGE_LABELS={legendary:"Légendaire",mythic:"Mythique",epic:"Épique",heavenly:"Heavenly",universal:"Universel",jackpot:"Jackpot",rare:"Rare",common:"Commun"};
+/* Rarity order for sorting sidebar */
+const RARITY_ORDER = {heavenly:0, universal:1, jackpot:2, mythic:3, legendary:4, epic:5, rare:6, common:7};
+const STAND_BADGE_LABELS = {legendary:"Légendaire",mythic:"Mythique",epic:"Épique",heavenly:"Heavenly",universal:"Universel",jackpot:"Jackpot",rare:"Rare",common:"Commun"};
 
-/* ===========================
-   HELPERS
-=========================== */
 const RL={common:"Commun",rare:"Rare",epic:"Épique",legendary:"Légendaire",mythic:"Mythique",jackpot:"Jackpot",heavenly:"Heavenly",universal:"Universel"};
 const RO={common:0,rare:1,epic:2,legendary:3,mythic:4,jackpot:5,heavenly:6,universal:7};
 function fv(v){if(v===null)return"N/A";if(!isFinite(v))return"INF";if(v>=1e6)return(v/1e6%1===0?v/1e6:(v/1e6).toFixed(1))+"M";if(v>=1000)return(v/1000%1===0?v/1000:(v/1000).toFixed(1))+"K";return String(v);}
@@ -1160,9 +1093,6 @@ function glc(r){return r==="jackpot"?"cj":r==="heavenly"?"ch":r==="universal"?"c
 function tH(t){return t==="up"?'<span class="trend up">↑ Hausse</span>':t==="down"?'<span class="trend down">↓ Baisse</span>':'<span class="trend flat">→ Stable</span>';}
 function dH(d){let h="";for(let i=1;i<=5;i++){const c=i<=d?(d>=4?"hi":d>=2?"med":"low"):"";h+='<div class="dd '+c+'"></div>';}return'<div class="d-bar" title="Demande '+d+'/5">'+h+"</div>";}
 
-/* ===========================
-   HOME
-=========================== */
 function buildStats(){
   const r=ITEMS.filter(i=>i.trend==="up").length;
   const h=ITEMS.filter(i=>["mythic","jackpot","heavenly","universal"].includes(i.rarity)).length;
@@ -1180,9 +1110,6 @@ function buildFAQ(){
 }
 function tFaq(i){const b=document.getElementById("fb"+i),c=document.getElementById("fc"+i);const o=b.classList.toggle("open");c.textContent=o?"−":"+";c.style.transform=o?"rotate(45deg)":"";}
 
-/* ===========================
-   ITEMS
-=========================== */
 let cf="all",cs="default",cv="grid";
 function filtered(q){
   const lq=(q||"").toLowerCase();
@@ -1214,8 +1141,6 @@ function buildItems(q){
     el.addEventListener("click",e=>{if(e.target.classList.contains("cp-btn"))return;const it=ITEMS.find(i=>i.name===el.dataset.n);if(it)openDetail(it);});
   });
 }
-
-/* Detail panel */
 function openDetail(it){
   document.getElementById("dpBadge").className="badge "+it.rarity;
   document.getElementById("dpBadge").textContent=RL[it.rarity];
@@ -1230,9 +1155,6 @@ function closeDetail(){document.getElementById("detailPanel").classList.remove("
 document.getElementById("dpClose").addEventListener("click",closeDetail);
 document.getElementById("detailOverlay").addEventListener("click",closeDetail);
 
-/* ===========================
-   FAMILIES
-=========================== */
 function buildFamilies(q){
   const lq=(q||"").toLowerCase();
   const list=FAMILIES.filter(f=>f.name.toLowerCase().includes(lq)||RL[f.rarity].toLowerCase().includes(lq));
@@ -1241,15 +1163,12 @@ function buildFamilies(q){
   g.innerHTML=list.map(f=>`<div class="fam-card" style="--fglow:${f.glow}"><div class="fam-name val ${f.rarity}">${f.name}</div><div><span class="badge ${f.rarity}">${RL[f.rarity]}</span></div><div class="fam-note">Valeur N/A</div></div>`).join("");
 }
 
-/* ===========================
-   TOAST
-=========================== */
 let tTimer;
 function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");clearTimeout(tTimer);tTimer=setTimeout(()=>t.classList.remove("show"),2400);}
 
-/* ===========================
+/* =====================================================================
    ATTACKS
-=========================== */
+===================================================================== */
 function renderAbility(ab, acc, cc) {
   return `<div class="cmd" style="--acc:${acc};--cc:${cc}">
     <div class="cmd-top">
@@ -1264,16 +1183,17 @@ function renderAbility(ab, acc, cc) {
 
 function buildStandList() {
   const list = document.getElementById("standList");
-
-  // Split into JJK and JoJo groups
-  const jjkIds = ["gojo","megumi","yuki","yuta","kashimo","choso","sukuna"];
+  const jjkIds = ["gojo","sukuna","kashimo","choso","megumi","yuki","yuta"];
   const jojoIds = ["tw","cmoon","wou","d4c","mih","twoh"];
 
-  const jjk = STANDS.filter(s => jjkIds.includes(s.id));
-  const jojo = STANDS.filter(s => jojoIds.includes(s.id));
+  /* Sort each group by rarity (highest first) */
+  const sortByRarity = arr => [...arr].sort((a,b) => (RARITY_ORDER[a.rarity]||9) - (RARITY_ORDER[b.rarity]||9));
 
-  function renderStandBtn(s) {
-    const badgeLabel = STAND_BADGE_LABELS[s.rarity] || s.rarity;
+  const jjk = sortByRarity(STANDS.filter(s => jjkIds.includes(s.id)));
+  const jojo = sortByRarity(STANDS.filter(s => jojoIds.includes(s.id)));
+
+  function renderBtn(s) {
+    const label = STAND_BADGE_LABELS[s.rarity] || s.rarity;
     return `<button class="stand-btn stand-btn--${s.rarity}" data-id="${s.id}" style="--acc:${s.acc}" onclick="selectStand('${s.id}')">
       <div class="stand-btn-img">
         <img src="${s.img}" alt="${esc(s.name)}" onerror="this.style.opacity=.2">
@@ -1282,15 +1202,15 @@ function buildStandList() {
         <div class="stand-btn-name">${esc(s.name)}</div>
         <div class="stand-btn-origin">${esc(s.origin.split("·")[0].trim())}</div>
       </div>
-      <span class="stand-btn-badge ${s.badgeClass}">${badgeLabel}</span>
+      <span class="stand-btn-badge ${s.badgeClass}">${label}</span>
     </button>`;
   }
 
   list.innerHTML =
     `<div class="stand-section-label">— Jujutsu Kaisen —</div>` +
-    jjk.map(renderStandBtn).join("") +
+    jjk.map(renderBtn).join("") +
     `<div class="stand-section-label">— JoJo's Bizarre Adventure —</div>` +
-    jojo.map(renderStandBtn).join("");
+    jojo.map(renderBtn).join("");
 }
 
 let activeStand = null;
@@ -1299,9 +1219,7 @@ function selectStand(id) {
   if (!stand) return;
   activeStand = id;
 
-  document.querySelectorAll(".stand-btn").forEach(b => {
-    b.classList.toggle("active", b.dataset.id === id);
-  });
+  document.querySelectorAll(".stand-btn").forEach(b => b.classList.toggle("active", b.dataset.id === id));
 
   const wrap = document.getElementById("guideWrap");
   const empty = document.getElementById("atkEmpty");
@@ -1311,15 +1229,18 @@ function selectStand(id) {
 
   let upgradeHTML = "";
   if (stand.upgrade) {
-    const upAbilities = stand.upgrade.abilities.map(ab => renderAbility(ab, "var(--universal)", "var(--universal)")).join("");
-    upgradeHTML = `<div class="upgrade-block">
-      <div class="upgrade-title">${stand.upgrade.title}</div>
-      <div style="font-size:12px;color:var(--tx3);margin-bottom:14px;line-height:1.7;">${stand.upgrade.intro}</div>
+    const up = stand.upgrade;
+    const upAbilities = up.abilities.map(ab => renderAbility(ab, up.acc, up.cc)).join("");
+    upgradeHTML = `<div class="upgrade-block ${up.blockClass}">
+      <div class="upgrade-title">
+        <img class="upgrade-title-img" src="${up.titleImg}" alt="${esc(up.title)}" onerror="this.style.display='none'">
+        ${esc(up.title)}
+      </div>
+      <div style="font-size:12px;color:var(--tx3);margin-bottom:14px;line-height:1.7;">${up.intro}</div>
       <div class="cmd-list">${upAbilities}</div>
     </div>`;
   }
 
-  // Tactical summary (replaces the generic hierarchy table)
   let tacticsHTML = "";
   if (stand.tips) {
     const t = stand.tips;
@@ -1328,32 +1249,25 @@ function selectStand(id) {
     const comboLi = t.combos.map(s=>`<li>${s}</li>`).join("");
 
     let counterTagsHTML = "";
-    if (t.breaksWhat && t.breaksWhat.length && t.breaksWhat[0] !== "Rien") {
+    if (t.breaksWhat && t.breaksWhat.length && t.breaksWhat[0] !== "Rien" && t.breaksWhat[0] !== "Rien (offensif pur)" && t.breaksWhat[0] !== "Rien (manipulation temporelle)" && t.breaksWhat[0] !== "Rien directement") {
       counterTagsHTML += `<span class="counters-label">Brise :</span>` +
         t.breaksWhat.map(x=>`<span class="counter-tag ct-breaks">${esc(x)}</span>`).join("");
     }
-    if (t.brokenBy && t.brokenBy.length && t.brokenBy[0] !== "Rien (World Slash est absolu)" && t.brokenBy[0] !== "Uniquement un autre TWOH") {
-      counterTagsHTML += `<span class="counters-label" style="margin-left:10px">Contré par :</span>` +
-        t.brokenBy.map(x=>`<span class="counter-tag ct-broken-by">${esc(x)}</span>`).join("");
-    } else if (t.brokenBy && t.brokenBy.length) {
-      counterTagsHTML += `<span class="counters-label" style="margin-left:${counterTagsHTML?10:0}px">Contré par :</span><span class="counter-tag ct-broken-by">${esc(t.brokenBy[0])}</span>`;
+    if (t.brokenBy && t.brokenBy.length) {
+      const lbl = t.brokenBy[0];
+      const isAbsolute = lbl === "Rien (World Slash est absolu)" || lbl === "Uniquement un autre TWOH";
+      counterTagsHTML += `<span class="counters-label" style="margin-left:${counterTagsHTML?10:0}px">Contré par :</span>` +
+        (isAbsolute
+          ? `<span class="counter-tag ct-broken-by">${esc(lbl)}</span>`
+          : t.brokenBy.map(x=>`<span class="counter-tag ct-broken-by">${esc(x)}</span>`).join(""));
     }
 
     tacticsHTML = `<div class="tactics-box" style="--acc:${stand.acc}">
       <div class="tactics-title">Résumé Tactique</div>
       <div class="tactics-grid">
-        <div class="tac-col strengths">
-          <div class="tac-col-title">✅ Points forts</div>
-          <ul>${strengthsLi}</ul>
-        </div>
-        <div class="tac-col weaknesses">
-          <div class="tac-col-title">❌ Faiblesses</div>
-          <ul>${weakLi}</ul>
-        </div>
-        <div class="tac-col combos">
-          <div class="tac-col-title">⚡ Combos clés</div>
-          <ul>${comboLi}</ul>
-        </div>
+        <div class="tac-col strengths"><div class="tac-col-title">✅ Points forts</div><ul>${strengthsLi}</ul></div>
+        <div class="tac-col weaknesses"><div class="tac-col-title">❌ Faiblesses</div><ul>${weakLi}</ul></div>
+        <div class="tac-col combos"><div class="tac-col-title">⚡ Combos clés</div><ul>${comboLi}</ul></div>
       </div>
       ${counterTagsHTML ? `<div class="counters-row">${counterTagsHTML}</div>` : ""}
     </div>`;
@@ -1372,7 +1286,7 @@ function selectStand(id) {
     </div>
     <div class="lore-box" style="--acc:${stand.acc}">${stand.lore}</div>
     <div class="atk-section">
-      <div class="atk-sec-title">⚙️ Commandes & Techniques</div>
+      <div class="atk-sec-title">⚙️ Commandes &amp; Techniques</div>
       <div class="cmd-list">${abilitiesHTML}</div>
     </div>
     ${upgradeHTML}
@@ -1380,9 +1294,9 @@ function selectStand(id) {
   </div>`;
 }
 
-/* ===========================
+/* =====================================================================
    CALCULATOR
-=========================== */
+===================================================================== */
 const MAX=9;
 let youArr=[],themArr=[],mTarget=null;
 function nv(it){return(it.value===null||!isFinite(it.value))?0:it.value;}
@@ -1456,9 +1370,9 @@ function renderModalList(q){
 }
 document.getElementById("resetBtn").addEventListener("click",()=>{youArr=[];themArr=[];renderSlots("you");renderSlots("them");toast("Calculateur réinitialisé");});
 
-/* ===========================
+/* =====================================================================
    NAV
-=========================== */
+===================================================================== */
 function switchPage(page){
   document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
   document.querySelectorAll(".nav-link").forEach(l=>l.classList.remove("active"));
@@ -1476,16 +1390,7 @@ document.getElementById("vGrid").addEventListener("click",()=>{cv="grid";documen
 document.getElementById("vList").addEventListener("click",()=>{cv="list";document.getElementById("vList").classList.add("on");document.getElementById("vGrid").classList.remove("on");buildItems(document.getElementById("searchInput").value);});
 document.getElementById("searchInput").addEventListener("input",function(){const p=document.querySelector(".nav-link.active");if(!p)return;if(p.dataset.page==="items")buildItems(this.value);if(p.dataset.page==="families")buildFamilies(this.value);});
 
-/* ===========================
-   INIT
-=========================== */
-buildStats();
-buildFAQ();
-buildItems();
-buildFamilies();
-buildStandList();
-renderSlots("you");
-renderSlots("them");
+buildStats();buildFAQ();buildItems();buildFamilies();buildStandList();renderSlots("you");renderSlots("them");
 </script>
 </body>
 </html>
