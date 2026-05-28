@@ -504,8 +504,8 @@ footer a:hover{color:var(--tx);}
         <button class="nav-link" data-page="items">Value List</button>
         <button class="nav-link" data-page="families">Familles</button>
         <button class="nav-link" data-page="calculator">Calculateur</button>
-        <button class="nav-link" data-page="attacks">⚔️ Attaques</button>
-        <button class="nav-link" data-page="updates">📋 Updates</button>
+        <button class="nav-link" data-page="attacks">Attaques</button>
+        <button class="nav-link" data-page="updates">Updates</button>
       </div>
     </div>
     <div class="nav-right">
@@ -551,7 +551,7 @@ footer a:hover{color:var(--tx);}
       <div class="feat-card" style="--fglow:rgba(41,184,232,.05)" onclick="switchPage('items')"><div class="feat-icon">📋</div><div class="feat-title">Value List</div><div class="feat-desc">Parcours toutes les valeurs de trading en temps réel avec tendances, demande et filtres par rareté.</div><div class="feat-cta">Voir la value list →</div></div>
       <div class="feat-card" style="--fglow:rgba(29,233,168,.04)" onclick="switchPage('calculator')"><div class="feat-icon">⚖️</div><div class="feat-title">Calculateur de Trade</div><div class="feat-desc">Compare tes offres et vérifie instantanément l'équité d'un échange avant de confirmer.</div><div class="feat-cta">Ouvrir le calculateur →</div></div>
       <div class="feat-card" style="--fglow:rgba(168,85,247,.04)" onclick="switchPage('families')"><div class="feat-icon">👥</div><div class="feat-title">Familles</div><div class="feat-desc">Explore toutes les familles disponibles sur le Casino JJK, classées par rareté.</div><div class="feat-cta">Voir les familles →</div></div>
-      <div class="feat-card" style="--fglow:rgba(255,82,82,.05)" onclick="switchPage('attacks')"><div class="feat-icon">⚔️</div><div class="feat-title">Attaques JJK &amp; JoJo</div><div class="feat-desc">Consulte toutes les capacités des pouvoirs JJK et JoJo — commandes, cooldowns, mécaniques détaillées.</div><div class="feat-cta">Voir les attaques →</div></div>
+      <div class="feat-card" style="--fglow:rgba(255,82,82,.05)" onclick="switchPage('attacks')"><div class="feat-icon">⚔️</div><div class="feat-title">Attaques</div><div class="feat-desc">Consulte toutes les capacités des pouvoirs JJK et JoJo — commandes, cooldowns, mécaniques détaillées.</div><div class="feat-cta">Voir les attaques →</div></div>
       <div class="feat-card" style="--fglow:rgba(61,120,255,.04)" onclick="switchPage('updates')"><div class="feat-icon">📋</div><div class="feat-title">Updates</div><div class="feat-desc">Consulte l'historique complet des mises à jour du Casino — nouveaux personnages, events, ajouts.</div><div class="feat-cta">Voir les updates →</div></div>
     </div>
     <div style="margin-top:40px;font-family:var(--font-h);font-weight:800;font-size:16px;margin-bottom:14px;color:var(--tx2);letter-spacing:-.3px;">Questions fréquentes</div>
@@ -560,7 +560,7 @@ footer a:hover{color:var(--tx);}
 
   <!-- VALUE LIST -->
   <div class="page" id="page-items">
-    <div class="sec-header"><div><div class="sec-title">Value List</div><div class="sec-sub">Toutes les valeurs de trading du Casino JJK · Mise à jour régulière</div></div><span class="sec-badge" id="itemCount">—</span></div>
+    <div class="sec-header"><div><div class="sec-title">Value List</div><div class="sec-sub">Toutes les valeurs de trading du Casino · Mise à jour régulière</div></div><span class="sec-badge" id="itemCount">—</span></div>
     <div class="ctrl-bar">
       <div class="ctrl-pills" id="rarityFilters">
         <button class="pill on" data-r="all">Tous</button>
@@ -583,7 +583,7 @@ footer a:hover{color:var(--tx);}
 
   <!-- FAMILIES -->
   <div class="page" id="page-families">
-    <div class="sec-header"><div><div class="sec-title">Familles</div><div class="sec-sub">Toutes les familles du Casino JJK, classées par rareté</div></div></div>
+    <div class="sec-header"><div><div class="sec-title">Familles</div><div class="sec-sub">Toutes les familles du Casino, classées par rareté</div></div></div>
     <div class="fam-grid" id="famGrid"></div>
   </div>
 
@@ -760,7 +760,7 @@ const UPDATES = [
    RARITY_ORDER: higher rarity = lower number = sorts FIRST in sidebar
    heavenly(0) > jackpot(1) > mythic(2) > legendary(3) > epic(4) > rare(5) > common(6)
 ===================================================================== */
-const RARITY_ORDER = {heavenly:0, universal:0, jackpot:1, mythic:2, legendary:3, epic:4, rare:5, common:6};
+const RARITY_ORDER = {universal:0, heavenly:1, jackpot:2, mythic:3, legendary:4, epic:5, rare:6, common:7};
 const STAND_BADGE_LABELS = {legendary:"Légendaire",mythic:"Mythique",epic:"Épique",heavenly:"Heavenly",universal:"Universel",jackpot:"Jackpot",rare:"Rare",common:"Commun"};
 
 const STANDS = [
