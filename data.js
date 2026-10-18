@@ -9,7 +9,6 @@ const ITEMS=[
 {n:"Potion Anti-Malus",r:"common",i:"antimaluspotion.png",p:20000,s:1,d:"Retire un malus actif au hasard, y compris une brûlure acide White Snake."},
 {n:"Potion de Luck",r:"common",i:"luckypotion.png",d:"Une potion commune, à gagner dans le Battlepass."},
 {n:"Potion de Mastery",r:"common",i:"masterypotion.png",d:"Une potion commune, à gagner dans le Battlepass."},
-{n:"Ticket Famille",r:"rare",p:35000,s:"u",d:"=reroll dans le salon reroll"},
 {n:"Halloween Box",r:"rare",i:"halloweenbox.png",p:40000,s:"u",x:"9 restantes",d:"Une boîte d'Halloween pleine de surprises ! Ouvre-la avec =open pour tenter ta chance !"},
 {n:"Reset Pouvoir",r:"rare",i:"remove.webp",p:100000,s:"o",d:"Utilise cet item pour retirer un de tes pouvoirs. Si tu as la famille Sukuna et 2 pouvoirs, tu choisiras lequel retirer. Le pouvoir Sukuna remet aussi tes doigts à 0."},
 {n:"White Snake",r:"rare",w:"whitesnake",p:250000,s:"o",d:"White Snake vole les disques, les souvenirs et la volonté de ses adversaires.",sd:"=whitesnake-info après l'achat"},
@@ -30,13 +29,13 @@ const ITEMS=[
 ];
 ITEMS.forEach(it=>it.img="images/"+(it.i||it.n+".webp"));
 const FAQ=[
-{q:"Comment sont assignées les valeurs ?",a:"Les valeurs sont fixées par le créateur du site et reflètent les valeurs du marché entre joueurs du Casino."},
-{q:"À quoi correspond 1 unité de valeur ?",a:"Les valeurs sont exprimées en monnaie du Casino. Plus la valeur est haute, plus l'objet est rare et demandé."},
-{q:"Qu'est-ce que la rareté Heavenly ?",a:"Heavenly est une rareté entre Jackpot et Universel. Elle regroupe des techniques divines dont la valeur est inestimable — badge blanc nacré avec bordure or."},
-{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) — impossible à valoriser avec les standards normaux."},
-{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation par la communauté."},
+{q:"Comment sont assignées les valeurs ?",a:"Les valeurs sont fixées par le créateur du site (moi) et reflètent les valeurs du marché entre joueurs du Casino suite à une étude de l'offre et la demande."},
+{q:"À quoi correspond 1 unité de valeur ?",a:"Les valeurs sont exprimées en monnaie du Casino (cubi coin). Plus la valeur est haute, plus l'objet est rare et demandé."},
+{q:"Qu'est-ce que la rareté Heavenly ?",a:"Heavenly est une rareté entre Jackpot et Universel. Elle regroupe des techniques pas encore ajoutée dans le casino."},
+{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) car elle est impossible à valoriser avec les standards normaux."},
+{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation."},
 {q:"Les valeurs changent-elles ?",a:"Oui, les valeurs sont mises à jour régulièrement selon l'offre et la demande. Les flèches de tendance (↑ ↓ →) indiquent l'évolution récente."},
-{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les modérateurs qui décident s'il y a un restock ou non. L'état du stock affiché sur le site est un instantané et peut être en retard."}
+{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les référents casino qui décident s'il y a un restock ou non. L'état du stock affiché sur le site est un instantané et peut être en retard."}
 ];
 /* tags : "classe:Libellé" — classes : freeze rob def break passive ult invert special broken poison boost shiki grey (mêmes couleurs que l'ancien site) */
 const T=(c,l)=>`<span class="atk-tag t-${c}">${l}</span>`;
