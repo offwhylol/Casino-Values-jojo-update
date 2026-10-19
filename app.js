@@ -227,7 +227,7 @@ function souls(){
   hookSearch(v=>{q=v;draw()});draw();
 }
 
-/* ---------- CALCULATEUR (ancien style) ---------- */
+/* ---------- CALCULATEUR ---------- */
 function calc(){
   const MAX=9;let youArr=[],themArr=[],mTarget=null;
   $("page").className="page active";
@@ -281,7 +281,7 @@ function calc(){
 }
 function closeModal(){$("mbg").classList.remove("open")}
 
-/* ---------- ATTAQUES (ancien style) ---------- */
+/* ---------- ATTAQUES ---------- */
 const xpH=x=>x==null?"":`<span class="cmd-xp">${x===0?"Base":typeof x==="number"?x+" XP":x}</span>`;
 const renderAbility=(ab,acc,cc)=>`<div class="cmd" data-xp="${typeof ab.xp==="number"?ab.xp:0}" style="--acc:${acc};--cc:${cc}"><div class="cmd-top"><span class="cmd-code">${esc(ab.cmd)}</span>${ab.tags.join("")}${xpH(ab.xp)}<span class="cmd-cd">${esc(ab.cd)}</span></div><div class="cmd-desc">${ab.desc}</div>${ab.note?`<div class="cmd-note">${ab.note}</div>`:""}</div>`;
 function selectStand(id){
