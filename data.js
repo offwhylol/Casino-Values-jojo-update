@@ -30,18 +30,18 @@ const ITEMS=[
 ];
 ITEMS.forEach(it=>it.img="images/"+(it.i||it.n+".webp"));
 const FAQ=[
-{q:"Comment sont assignées les valeurs ?",a:"Les valeurs sont fixées par le créateur du site et reflètent les valeurs du marché entre joueurs du Casino."},
+{q:"Comment sont assignées les valeurs ?",a:"Les valeurs sont fixées par le créateur du site (moi-même) et reflètent les valeurs du marché entre joueurs du Casino suite à une étude des offres et des demandes."},
 {q:"À quoi correspond 1 unité de valeur ?",a:"Les valeurs sont exprimées en monnaie du Casino. Plus la valeur est haute, plus l'objet est rare et demandé."},
-{q:"Qu'est-ce que la rareté Heavenly ?",a:"Heavenly est une rareté entre Jackpot et Universel. Elle regroupe des techniques divines dont la valeur est inestimable — badge blanc nacré avec bordure or."},
-{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) — impossible à valoriser avec les standards normaux."},
-{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation par la communauté."},
+{q:"Qu'est-ce que la rareté Heavenly ?",a:"Heavenly est une rareté entre Jackpot et Universel. Elle regroupe des techniques pas encore ajoutée dans le casino, c'est un petit 'sneak peak' :)."},
+{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) car elle est impossible à valoriser avec les standards normaux."},
+{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation."},
 {q:"Les valeurs changent-elles ?",a:"Oui, les valeurs sont mises à jour régulièrement selon l'offre et la demande. Les flèches de tendance (↑ ↓ →) indiquent l'évolution récente."},
-{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les modérateurs qui décident s'il y a un restock ou non. L'état du stock affiché sur le site est un instantané et peut être en retard."}
+{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les référents du casino qui décident s'il y a un restock ou non. L'état du stock affiché peut avoir un peut de retard."}
 ];
 /* tags : "classe:Libellé" — classes : freeze rob def break passive ult invert special broken poison boost shiki grey (mêmes couleurs que l'ancien site) */
 const T=(c,l)=>`<span class="atk-tag t-${c}">${l}</span>`;
 const A=(cmd,tg,cd,desc,note,xp)=>({cmd,tags:tg.map(t=>T(...t.split(":"))),cd,desc,note:note||"",xp});
-const GROUPS=[["Jujutsu Kaisen",["yuta","megumi","choso"]],["JoJo's Bizarre Adventure",["theworld","whitesnake"]],["Autres",["spamlol","flowery"]]];
+const GROUPS=[["Jujutsu Kaisen",["yuta","megumi","choso"]],["JoJo's Bizarre Adventure",["theworld","whitesnake"]],["Deltarune",["spamlol","flowery"]]];
 const STANDS=[
 {id:"yuta",it:"Queen of Curse",name:"Yuta Okkotsu",origin:"Queen of Curse · Le sorcier le plus fort",rarity:"jackpot",acc:"#ff8faa",cc:"#ffb0c8",headerBg:"linear-gradient(135deg,#08001a,#0c1520)",
 lore:"<strong>Concept :</strong> Yuta combine la copie, Rika et son Extension du Territoire. <b>Les ultimates ne sont jamais copiables</b> · Copie Améliorée et Domain nécessitent Rika · Jacob Leader : 1 seule utilisation par Domain.",
