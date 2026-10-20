@@ -9,7 +9,7 @@ const ITEMS=[
 {n:"Potion Anti-Malus",r:"common",i:"antimaluspotion.png",p:20000,s:1,d:"Retire un malus actif au hasard, y compris une brûlure acide White Snake."},
 {n:"Potion de Luck",r:"common",i:"luckypotion.png",d:"Une potion commune, à gagner dans le Battlepass."},
 {n:"Potion de Mastery",r:"common",i:"masterypotion.png",d:"Une potion commune, à gagner dans le Battlepass."},
-{n:"Ticket Âme",r:"rare",i:"Ticket Famille",p:35000,v:35000,demand:0,trend:"flat",s:"u",d:"=reroll dans le salon reroll"},
+{n:"Ticket Âme",r:"rare",i:"Ticket Famille.webp",p:35000,v:35000,demand:0,trend:"flat",s:"u",d:"=reroll dans le salon reroll"},
 {n:"Lucky Spin",r:"rare",i:"LuckySpin.webp",v:45000,demand:5,trend:"flat",d:"Un ticket âme premium pour augmenter ses chances."},
 {n:"Halloween Box",r:"rare",i:"halloweenbox.png",p:40000,s:"u",x:"9 restantes",d:"Une boîte d'Halloween pleine de surprises ! Ouvre-la avec =open pour tenter ta chance !"},
 {n:"Reset Pouvoir",r:"rare",i:"remove.webp",p:100000,s:"o",d:"Utilise cet item pour retirer un de tes pouvoirs. Si tu as la famille Sukuna et 2 pouvoirs, tu choisiras lequel retirer. Le pouvoir Sukuna remet aussi tes doigts à 0."},
