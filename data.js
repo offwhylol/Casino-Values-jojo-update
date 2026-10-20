@@ -19,14 +19,14 @@ const ITEMS=[
 {n:"La Lisière Du Supplice",r:"epic",i:"prisonrealm.webp",v:200000,demand:3,trend:"flat",p:100000,s:1,d:"Bloque le pouvoir d'un joueur jusqu'à ce qu'il soit libéré. Utilisation : =sceller @user"},
 {n:"VIP",r:"legendary",i:"vip.webp",v:300000,demand:5,trend:"flat",p:100000,s:"o",d:"Donne le rôle VIP et donne accès au salon luxueux."},
 {n:"Spamlol V1",r:"legendary",i:"Spamlol v1.webp",w:"spamlol",p:300000,s:"o",d:"Ne gagne pas par la force — il transforme les actions des autres en opportunités.",sd:"=spamlol-info après l'achat"},
-{n:"Flowery",r:"legendary",i:"Flowery.png",w:"flowery",v:650000,demand:0,trend:"flat",p:350000,s:"o",d:"Flowery, Chef des Six Fleurs, utilise ses fleurs pour contrôler le combat.",sd:"=flowery-info après l'achat"},
+{n:"Ten Shadow",r:"legendary",i:"Megumi.webp",w:"megumi",v:450000,demand:1,trend:"flat",p:400000,s:"o",d:"Invoque les shikigami de Megumi Fushiguro !",sd:"=megumi-info après l'achat"},
 {n:"The World",r:"legendary",w:"theworld",p:450000,s:"o",d:"Un pouvoir de contrôle absolu : arrête le temps, détruis les défenses et verrouille le champ de bataille.",sd:"=theworld-info après l'achat"},
 {n:"Grimoire du Clown",r:"legendary",i:"grimoire.webp",d:"1 % de chance de le sortir d'une Halloween Box."},
 {n:"Choso",r:"mythic",w:"choso",p:200000,v:200500,demand:0,trend:"flat",s:1,d:"Techniques de Choso, Sorcier du Sang !",sd:"=choso-info pour plus d'info et /item use pour avoir le pouvoir"},
 {n:"AD BREAK",r:"mythic",i:"AD.png",d:"Dernière récompense du Battlepass : tu choisis entre AD BREAK et My King."},
 {n:"My King",r:"mythic",i:"crown.png",d:"Dernière récompense du Battlepass : tu choisis entre My King et AD BREAK."},
-{n:"Ten Shadow",r:"jackpot",i:"Megumi.webp",w:"megumi",v:450000,demand:1,trend:"flat",p:400000,s:"o",d:"Invoque les shikigami de Megumi Fushiguro !",sd:"=megumi-info après l'achat"},
 {n:"Queen of Curse",r:"jackpot",i:"Yuta.webp",w:"yuta",v:600000,demand:2,trend:"flat",p:500000,s:"o",d:"Yuta combine la copie, Rika et son Extension du Territoire.",sd:"=yuta-info après l'achat"},
+{n:"Flowery",r:"jackpot",i:"Flowery.png",w:"flowery",v:650000,demand:0,trend:"flat",p:350000,s:"o",d:"Flowery, Chef des Six Fleurs, utilise ses fleurs pour contrôler le combat.",sd:"=flowery-info après l'achat"},
 {n:"Mahoraga",r:"universal",i:"mahoraga.webp",w:"megumi",v:Infinity,demand:5,trend:"flat",d:"Seulement 2 copies existent. Tellement rare qu'elle est inestimable. Obtenu lors de l'événement Mahoraga."}
 ];
 ITEMS.forEach(it=>it.img="images/"+(it.i||it.n+".webp"));
