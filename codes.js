@@ -14,12 +14,12 @@ const DISCORD_CODES = [
 {
     code: "SOULS",
     reward: "x4 Lucky Spin",
-    expiresAt: "null", // Format AAAA-MM-JJ ; mets null si la date est inconnue.
+    expiresAt: "2026-10-26", // Format AAAA-MM-JJ ; mets null si la date est inconnue.
   },
 {
     code: "TRADE",
     reward: "x1 Token Bp",
-    expiresAt: "null", // Format AAAA-MM-JJ ; mets null si la date est inconnue.
+    expiresAt: "2026-10-21", // Format AAAA-MM-JJ ; mets null si la date est inconnue.
   },
 {
     code: "CLOWN",
