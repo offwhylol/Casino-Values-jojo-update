@@ -33,10 +33,10 @@ const FAQ=[
 {q:"Comment sont assignées les valeurs ?",a:"Les valeurs sont fixées par le créateur du site (moi-même) et reflètent les valeurs du marché entre joueurs du Casino suite à une étude des offres et des demandes."},
 {q:"À quoi correspond 1 unité de valeur ?",a:"Les valeurs sont exprimées en monnaie du Casino. Plus la valeur est haute, plus l'objet est rare et demandé."},
 {q:"Qu'est-ce que la rareté Heavenly ?",a:"Heavenly est une rareté entre Jackpot et Universel. Elle regroupe des techniques pas encore ajoutées dans le casino, c'est un petit \"sneak peak\" :)."},
-{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) — impossible à valoriser avec les standards normaux."},
-{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation par la communauté."},
+{q:"Qu'est-ce que Mahoraga / Universel ?",a:"Mahoraga est classé Universel car seulement 2 copies existent. Sa valeur est infinie (INF) car elle est impossible à valoriser avec les standards normaux."},
+{q:"Que signifie N/A pour une valeur ?",a:"N/A signifie que l'objet n'a pas encore de valeur officielle établie. Ces objets sont en cours d'évaluation."},
 {q:"Les valeurs changent-elles ?",a:"Oui, les valeurs sont mises à jour régulièrement selon l'offre et la demande. Les flèches de tendance (↑ ↓ →) indiquent l'évolution récente."},
-{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les modérateurs qui décident s'il y a un restock ou non. L'état du stock affiché sur le site est un instantané et peut être en retard."}
+{q:"Qui décide des restocks de la boutique ?",a:"Ce sont les référents casino et lol0 qui décident s'il y a un restock ou non. L'état du stock affiché sur le site grâce à une clée API, il est donc toujours à jour."}
 ];
 /* tags : "classe:Libellé" — classes : freeze rob def break passive ult invert special broken poison boost shiki grey (mêmes couleurs que l'ancien site) */
 const T=(c,l)=>`<span class="atk-tag t-${c}">${l}</span>`;
