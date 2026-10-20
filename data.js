@@ -55,7 +55,7 @@ A("=copiemax @user",["special:Menu déroulant"],"5min (normal) / 10min (max)","M
 A("+purelove @user",["invert:Transfert debuffs"],"12h","Transfère <b>tes debuffs actifs</b> vers une autre personne.","",60),
 A("+jacob @user",["break:Enlève TOUS les buffs"],"1× par Domain","Enlève <b>TOUS les buffs et protections</b> de la cible.","<b>Uniquement pendant le Domain</b> — 1 seule utilisation par Domain.",500),
 A("+purelove-max @user",["ult:Ultime","rob:Casse bank 5min"],"3 jours","Casse la bank d'une personne (max <b>1.5M</b>) pendant <b>5 minutes</b>.","",300)]},
-{id:"megumi",it:"Ten Shadow",name:"Megumi Fushiguro",origin:"Ten Shadow · Dix Ombres",rarity:"jackpot",acc:"#888899",cc:"#aaaacc",headerBg:"linear-gradient(135deg,#08080f,#0c1520)",
+{id:"megumi",it:"Ten Shadow",name:"Megumi Fushiguro",origin:"Ten Shadow · Dix Ombres",rarity:"legendary",acc:"#888899",cc:"#aaaacc",headerBg:"linear-gradient(135deg,#08080f,#0c1520)",
 lore:"<strong>Concept :</strong> Invoque les shikigami de Megumi Fushiguro ! <b>Agito</b> donne un shikigami aléatoire et <b>Mahoraga</b> est son ultime absolu : chaque hit normal = 1 rotation, 3 = adapté / immune.",
 abilities:[
 A("=frog @user",["freeze:Blocage dépôt"],"2h","Bloque le dépôt de la cible pendant <b>5 minutes</b>.","",0),
@@ -99,7 +99,7 @@ A("=scam @user",["special:Effet aléatoire"],"18h","Fausse offre à effet aléat
 A("=deal @user",["boost:+10% prochain gain"],"1 jour","<b>+10% sur son prochain gain</b>, remboursable en banque dans 12h si consommé.","",70),
 A("=glitch",["special:Mode spécial 30min"],"2 jours","30 min : tes Advertise/Every ont <b>34%</b> de chance d'être doublés, <b>33%</b> renforcés (+50%).","",200),
 A("=every @user",["ult:Attaque finale","rob:Attaque bank"],"3 jours","Attaque la banque : <b>pourcentage et plafond réglables dans le panel</b>.","",350)]},
-{id:"flowery",it:"Flowery",name:"Flowery",origin:"Chef des Six Fleurs",rarity:"legendary",acc:"#ff7eb6",cc:"#ff9fcb",headerBg:"linear-gradient(135deg,#14000a,#0c1520)",
+{id:"flowery",it:"Flowery",name:"Flowery",origin:"Chef des Six Fleurs",rarity:"jackpot",acc:"#ff7eb6",cc:"#ff9fcb",headerBg:"linear-gradient(135deg,#14000a,#0c1520)",
 lore:"<strong>Concept :</strong> Flowery, Chef des Six Fleurs, utilise ses fleurs pour contrôler le combat. Utilise <b>=jardin</b> pour voir ta progression et ta fleur active.",
 abilities:[
 A("=jarona",["boost:Récolte"],"6h","Récolte une Jarona — <b>90%</b> normale / <b>10%</b> Ja-Orange (compte double).","",0),
