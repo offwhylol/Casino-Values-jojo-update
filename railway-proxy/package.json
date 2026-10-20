@@ -1,0 +1,12 @@
+{
+  "name": "casinovalues-read-only-api-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proxy en lecture seule pour les données live de CasinoValues.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
